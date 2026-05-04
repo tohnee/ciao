@@ -1,5 +1,6 @@
 import type { PrismaTx } from "./types";
 import { addCredits } from "./credit-ledger";
+import { getOrCreateProfile } from "./author-profile";
 
 const CODE_CHARS = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
 const CODE_LENGTH = 8;
@@ -32,15 +33,6 @@ export async function getOrCreateCode(prisma: PrismaTx, workspaceId: string) {
   });
   return code;
 }
-
-async function getOrCreateProfile(prisma: PrismaTx, workspaceId: string) {
-  return prisma.authorProfile.upsert({
-    where: { workspaceId },
-    create: { workspaceId },
-    update: {},
-  });
-}
-
 export async function applyReferral(
   prisma: PrismaTx,
   code: string,

@@ -25,7 +25,7 @@
   },
   "build": {
     "buildCommand": "npm run build 2>&1 | tail -20",
-    "testCommand": "npm test 2>&1 | tail -30",
+    "testCommand": "npx vitest run 2>&1 | tail -30",
     "lintCommand": "npm run lint",
     "devCommand": "npm run dev",
     "scripts": {
