@@ -1,0 +1,73 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - link "C CIAO v0.2" [ref=e5] [cursor=pointer]:
+        - /url: /home
+        - generic [ref=e6]: C
+        - generic [ref=e7]:
+          - text: CIAO
+          - paragraph [ref=e8]: v0.2
+      - navigation [ref=e10]:
+        - paragraph [ref=e11]: Workspace
+        - link "Home" [ref=e12] [cursor=pointer]:
+          - /url: /home
+          - img [ref=e13]
+          - generic [ref=e16]: Home
+        - link "Decisions" [ref=e18] [cursor=pointer]:
+          - /url: /decisions
+          - img [ref=e19]
+          - generic [ref=e23]: Decisions
+        - link "Outcomes" [ref=e24] [cursor=pointer]:
+          - /url: /outcomes
+          - img [ref=e25]
+          - generic [ref=e28]: Outcomes
+        - link "Memory" [ref=e29] [cursor=pointer]:
+          - /url: /memory
+          - img [ref=e30]
+          - generic [ref=e38]: Memory
+        - link "Advanced" [ref=e39] [cursor=pointer]:
+          - /url: /advanced
+          - img [ref=e40]
+          - generic [ref=e43]: Advanced
+        - paragraph [ref=e44]: Agents
+        - link "Agents" [ref=e45] [cursor=pointer]:
+          - /url: /agents
+          - img [ref=e46]
+          - generic [ref=e49]: Agents
+        - link "Skills" [ref=e50] [cursor=pointer]:
+          - /url: /skills
+          - img [ref=e51]
+          - generic [ref=e53]: Skills
+        - link "Teams" [ref=e54] [cursor=pointer]:
+          - /url: /teams
+          - img [ref=e55]
+          - generic [ref=e60]: Teams
+    - main [ref=e61]:
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - heading "CIAO is calm." [level=1] [ref=e68]
+          - img [ref=e69]
+        - generic [ref=e72]:
+          - textbox "What should CIAO take care of?" [ref=e73]
+          - generic [ref=e74]:
+            - generic [ref=e75]:
+              - img [ref=e76]
+              - generic [ref=e78]: Mode
+              - generic [ref=e79]:
+                - button "ask" [ref=e80] [cursor=pointer]
+                - button "draft" [ref=e81] [cursor=pointer]
+                - button "act" [ref=e82] [cursor=pointer]
+                - button "ship" [ref=e83] [cursor=pointer]
+                - button "watch" [ref=e84] [cursor=pointer]
+                - button "review" [ref=e85] [cursor=pointer]
+            - generic [ref=e86]:
+              - img [ref=e87]
+              - generic [ref=e92]: Cost
+              - generic [ref=e93]:
+                - button "frugal" [ref=e94] [cursor=pointer]
+                - button "balanced" [ref=e95] [cursor=pointer]
+                - button "thorough" [ref=e96] [cursor=pointer]
+        - heading "Now" [level=2] [ref=e98]
+        - heading "Needs You" [level=2] [ref=e100]
+        - heading "Outcomes" [level=2] [ref=e102]
+  - alert [ref=e103]

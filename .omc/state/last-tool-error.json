@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"ls /Users/tc/Workspace/projects/ciao/apps/web/app/api/marketplace/[id]/ /Users/tc/Workspace/projects/ciao/apps/web/app/api/agents/[id]/ /Users/tc/Workspace/projects/ciao/apps/web/app/api/s...",
+  "error": "Exit code 1\n(eval):1: no matches found: /Users/tc/Workspace/projects/ciao/apps/web/app/api/marketplace/[id]/",
+  "timestamp": "2026-05-04T10:35:37.352Z",
+  "retry_count": 2
+}

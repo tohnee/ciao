@@ -1,0 +1,417 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1777816145854,
+  "projectRoot": "/Users/tc/Workspace/projects/ciao",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "vitest",
+        "version": "3.2.4",
+        "category": "testing"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "npm run build 2>&1 | tail -20",
+    "testCommand": "npm test 2>&1 | tail -30",
+    "lintCommand": "npm run lint",
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "turbo run dev --cache-dir=.turbo/cache",
+      "build": "turbo run build --cache-dir=.turbo/cache",
+      "lint": "turbo run lint --cache-dir=.turbo/cache",
+      "typecheck": "turbo run typecheck --cache-dir=.turbo/cache",
+      "test": "vitest run",
+      "prisma:generate": "npm run prisma:generate --workspace @ciao/web"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": "*.test.ts",
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": true,
+    "workspaces": [
+      "apps/*",
+      "packages/*"
+    ],
+    "mainDirectories": [
+      "docs",
+      "scripts",
+      "tests"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "apps": {
+      "path": "apps",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1777816145845,
+      "keyFiles": []
+    },
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 0,
+      "lastAccessed": 1777816145845,
+      "keyFiles": []
+    },
+    "packages": {
+      "path": "packages",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1777816145849,
+      "keyFiles": []
+    },
+    "scripts": {
+      "path": "scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 1,
+      "lastAccessed": 1777816145850,
+      "keyFiles": [
+        "generate_scaffold.mjs"
+      ]
+    },
+    "tests": {
+      "path": "tests",
+      "purpose": "Test files",
+      "fileCount": 17,
+      "lastAccessed": 1777816145850,
+      "keyFiles": [
+        "a2-schema.test.ts",
+        "decision-resolution.test.ts",
+        "demo-runtime.test.ts",
+        "event-repository.test.ts",
+        "events-api.test.ts"
+      ]
+    },
+    "workers": {
+      "path": "workers",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1777816145850,
+      "keyFiles": [
+        "loop-worker.ts"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "apps/web/lib/runtime-repository.ts",
+      "accessCount": 35,
+      "lastAccessed": 1777781541790,
+      "type": "file"
+    },
+    {
+      "path": "apps/web/lib/loop-orchestrator.ts",
+      "accessCount": 20,
+      "lastAccessed": 1777631694910,
+      "type": "file"
+    },
+    {
+      "path": "apps/web/prisma/schema.prisma",
+      "accessCount": 20,
+      "lastAccessed": 1777686592086,
+      "type": "file"
+    },
+    {
+      "path": "CLAUDE.md",
+      "accessCount": 18,
+      "lastAccessed": 1777889120977,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/index.ts",
+      "accessCount": 9,
+      "lastAccessed": 1777629130313,
+      "type": "file"
+    },
+    {
+      "path": "apps/web/lib/event-repository.ts",
+      "accessCount": 9,
+      "lastAccessed": 1777631564364,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/types.ts",
+      "accessCount": 8,
+      "lastAccessed": 1777628746064,
+      "type": "file"
+    },
+    {
+      "path": "apps/web/stores/home.ts",
+      "accessCount": 7,
+      "lastAccessed": 1777628173965,
+      "type": "file"
+    },
+    {
+      "path": "apps/web/lib/prisma.ts",
+      "accessCount": 7,
+      "lastAccessed": 1777781421872,
+      "type": "file"
+    },
+    {
+      "path": "vitest.config.ts",
+      "accessCount": 7,
+      "lastAccessed": 1777889001494,
+      "type": "file"
+    },
+    {
+      "path": "apps/web/hooks/useSSE.ts",
+      "accessCount": 6,
+      "lastAccessed": 1777627036941,
+      "type": "file"
+    },
+    {
+      "path": "apps/web/lib/provider-factory.ts",
+      "accessCount": 6,
+      "lastAccessed": 1777630713662,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/governor.ts",
+      "accessCount": 5,
+      "lastAccessed": 1777628687797,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/capabilities/interpret-intent.ts",
+      "accessCount": 5,
+      "lastAccessed": 1777628701446,
+      "type": "file"
+    },
+    {
+      "path": "packages/shared/src/types/outcome.ts",
+      "accessCount": 5,
+      "lastAccessed": 1777630143155,
+      "type": "file"
+    },
+    {
+      "path": "apps/web/lib/sse.ts",
+      "accessCount": 5,
+      "lastAccessed": 1777630846351,
+      "type": "file"
+    },
+    {
+      "path": "vitest.setup.ts",
+      "accessCount": 5,
+      "lastAccessed": 1777889001549,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/context-compiler.ts",
+      "accessCount": 5,
+      "lastAccessed": 1777889046018,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/prompts/intent-interpreter.ts",
+      "accessCount": 4,
+      "lastAccessed": 1777626715828,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/prompts/signal-summarizer.ts",
+      "accessCount": 4,
+      "lastAccessed": 1777626716280,
+      "type": "file"
+    },
+    {
+      "path": "packages/shared/src/types/signal.ts",
+      "accessCount": 4,
+      "lastAccessed": 1777626998553,
+      "type": "file"
+    },
+    {
+      "path": "packages/shared/src/types/decision.ts",
+      "accessCount": 4,
+      "lastAccessed": 1777626998631,
+      "type": "file"
+    },
+    {
+      "path": "packages/shared/src/types/loop.ts",
+      "accessCount": 4,
+      "lastAccessed": 1777626998797,
+      "type": "file"
+    },
+    {
+      "path": "packages/shared/src/types/intent.ts",
+      "accessCount": 4,
+      "lastAccessed": 1777626998861,
+      "type": "file"
+    },
+    {
+      "path": "packages/shared/src/types/home.ts",
+      "accessCount": 4,
+      "lastAccessed": 1777626998899,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/signal-engine.ts",
+      "accessCount": 4,
+      "lastAccessed": 1777627029632,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 4,
+      "lastAccessed": 1777627044100,
+      "type": "file"
+    },
+    {
+      "path": "packages/providers/src/types.ts",
+      "accessCount": 4,
+      "lastAccessed": 1777628701507,
+      "type": "file"
+    },
+    {
+      "path": "turbo.json",
+      "accessCount": 4,
+      "lastAccessed": 1777889001785,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/cost-governor.ts",
+      "accessCount": 4,
+      "lastAccessed": 1777889045956,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/model-router.ts",
+      "accessCount": 4,
+      "lastAccessed": 1777889046404,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/risk-sentinel.ts",
+      "accessCount": 4,
+      "lastAccessed": 1777889046683,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/memory-curator.ts",
+      "accessCount": 4,
+      "lastAccessed": 1777889046738,
+      "type": "file"
+    },
+    {
+      "path": ".env.example",
+      "accessCount": 4,
+      "lastAccessed": 1777890978498,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/capabilities/review-diff.ts",
+      "accessCount": 3,
+      "lastAccessed": 1777626701068,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/capabilities/run-tests.ts",
+      "accessCount": 3,
+      "lastAccessed": 1777626701163,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/capabilities/plan-change.ts",
+      "accessCount": 3,
+      "lastAccessed": 1777626701237,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/capabilities/monitor-signal.ts",
+      "accessCount": 3,
+      "lastAccessed": 1777626701292,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/capabilities/select-files.ts",
+      "accessCount": 3,
+      "lastAccessed": 1777626701344,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/capabilities/edit-code.ts",
+      "accessCount": 3,
+      "lastAccessed": 1777626701398,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/capabilities/summarize-result.ts",
+      "accessCount": 3,
+      "lastAccessed": 1777626701453,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/decision-engine.ts",
+      "accessCount": 3,
+      "lastAccessed": 1777627029236,
+      "type": "file"
+    },
+    {
+      "path": "README.md",
+      "accessCount": 3,
+      "lastAccessed": 1777889001676,
+      "type": "file"
+    },
+    {
+      "path": "task_plan.md",
+      "accessCount": 2,
+      "lastAccessed": 1777601892134,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/capabilities/compile-context.ts",
+      "accessCount": 2,
+      "lastAccessed": 1777626708541,
+      "type": "file"
+    },
+    {
+      "path": "packages/engine/src/capabilities/extract-memory.ts",
+      "accessCount": 2,
+      "lastAccessed": 1777626708636,
+      "type": "file"
+    },
+    {
+      "path": "tsconfig.base.json",
+      "accessCount": 2,
+      "lastAccessed": 1777626755144,
+      "type": "file"
+    },
+    {
+      "path": "tests/provider-deepseek-smoke.test.ts",
+      "accessCount": 1,
+      "lastAccessed": 1777600898980,
+      "type": "file"
+    },
+    {
+      "path": "findings.md",
+      "accessCount": 1,
+      "lastAccessed": 1777601526709,
+      "type": "file"
+    },
+    {
+      "path": "progress.md",
+      "accessCount": 1,
+      "lastAccessed": 1777601892171,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

@@ -1,0 +1,982 @@
+[     110ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[     413ms] [LOG] [Fast Refresh] done in 303ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[     649ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:38559
+[ 1216877ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[ 1217169ms] [LOG] [Fast Refresh] done in 303ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94231994ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94234388ms] [LOG] [Fast Refresh] done in 2397ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94265074ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94265262ms] [LOG] [Fast Refresh] done in 188ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94270482ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94270583ms] [LOG] [Fast Refresh] done in 101ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94270835ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94270967ms] [LOG] [Fast Refresh] done in 131ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94413541ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94413825ms] [LOG] [Fast Refresh] done in 284ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94413832ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94413975ms] [LOG] [Fast Refresh] done in 142ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94414248ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94414341ms] [LOG] [Fast Refresh] done in 94ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94451772ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94451947ms] [LOG] [Fast Refresh] done in 175ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94452209ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94452339ms] [LOG] [Fast Refresh] done in 129ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94452521ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94452639ms] [LOG] [Fast Refresh] done in 118ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94452845ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94452960ms] [LOG] [Fast Refresh] done in 115ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94510739ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94510875ms] [LOG] [Fast Refresh] done in 137ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94559648ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94559768ms] [LOG] [Fast Refresh] done in 119ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94559862ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94560025ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94560280ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94560295ms] [LOG] [Fast Refresh] done in 16ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94560500ms] [LOG] [Fast Refresh] done in 221ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94560625ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94560707ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94560940ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94560950ms] [LOG] [Fast Refresh] done in 10ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94561288ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94561432ms] [LOG] [Fast Refresh] done in 143ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94561682ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94561749ms] [LOG] [Fast Refresh] done in 67ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94561884ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94658418ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94658623ms] [LOG] [Fast Refresh] done in 204ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94658825ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94658969ms] [LOG] [Fast Refresh] done in 143ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94659206ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94659277ms] [LOG] [Fast Refresh] done in 72ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94659404ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94662504ms] [WARNING] The resource http://localhost:3000/_next/static/css/app/layout.css?v=1777781577478 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/sell:0
+[94664000ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94664055ms] [LOG] [Fast Refresh] done in 54ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94666075ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94666430ms] [LOG] [Fast Refresh] done in 354ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94666438ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94666950ms] [LOG] [Fast Refresh] done in 511ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94666974ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94667512ms] [LOG] [Fast Refresh] done in 538ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94667716ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94667767ms] [LOG] [Fast Refresh] done in 52ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94670779ms] [WARNING] The resource http://localhost:3000/_next/static/css/app/layout.css?v=1777781577478 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/sell:0
+[94707750ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94707935ms] [LOG] [Fast Refresh] done in 185ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94710956ms] [WARNING] The resource http://localhost:3000/_next/static/css/app/layout.css?v=1777781577478 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/sell:0
+[94776430ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94776877ms] [LOG] [Fast Refresh] done in 447ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94779900ms] [WARNING] The resource http://localhost:3000/_next/static/css/app/layout.css?v=1777781577478 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/sell:0
+[94798395ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[94798536ms] [LOG] [Fast Refresh] done in 141ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[94801567ms] [WARNING] The resource http://localhost:3000/_next/static/css/app/layout.css?v=1777781577478 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/sell:0
+[95032188ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[95032512ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[95032548ms] [LOG] [Fast Refresh] done in 36ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[95032671ms] [LOG] [Fast Refresh] done in 158ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[95032863ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[95033040ms] [LOG] [Fast Refresh] done in 178ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[95033212ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[95033715ms] [LOG] [Fast Refresh] done in 503ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[95036745ms] [WARNING] The resource http://localhost:3000/_next/static/css/app/layout.css?v=1777781577478 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/sell:0
+[95292447ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[95293313ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[95293341ms] [LOG] [Fast Refresh] done in 27ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[95293572ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[95293790ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[95293977ms] [ERROR] ../../packages/payments/src/index.ts:1:1
+Module not found: Can't resolve './types.js'
+> 1 | export * from "./types.js";
+    | ^
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95293977ms] [ERROR] ../../packages/payments/src/index.ts:2:1
+Module not found: Can't resolve './commission.js'
+  1 | export * from "./types.js";
+> 2 | export * from "./commission.js";
+    | ^
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95293977ms] [ERROR] ../../packages/payments/src/index.ts:3:1
+Module not found: Can't resolve './credit-ledger.js'
+  1 | export * from "./types.js";
+  2 | export * from "./commission.js";
+> 3 | export * from "./credit-ledger.js";
+    | ^
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+  6 | export * from "./referral.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95293978ms] [ERROR] ../../packages/payments/src/index.ts:4:1
+Module not found: Can't resolve './subscription.js'
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+> 4 | export * from "./subscription.js";
+    | ^
+  5 | export * from "./author-profile.js";
+  6 | export * from "./referral.js";
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95293978ms] [ERROR] ../../packages/payments/src/index.ts:5:1
+Module not found: Can't resolve './author-profile.js'
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+> 5 | export * from "./author-profile.js";
+    | ^
+  6 | export * from "./referral.js";
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95293978ms] [ERROR] ../../packages/payments/src/index.ts:6:1
+Module not found: Can't resolve './referral.js'
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+> 6 | export * from "./referral.js";
+    | ^
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95294046ms] [ERROR] ../../packages/payments/src/index.ts:1:1
+Module not found: Can't resolve './types.js'
+> 1 | export * from "./types.js";
+    | ^
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95294046ms] [ERROR] ../../packages/payments/src/index.ts:2:1
+Module not found: Can't resolve './commission.js'
+  1 | export * from "./types.js";
+> 2 | export * from "./commission.js";
+    | ^
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95294046ms] [ERROR] ../../packages/payments/src/index.ts:3:1
+Module not found: Can't resolve './credit-ledger.js'
+  1 | export * from "./types.js";
+  2 | export * from "./commission.js";
+> 3 | export * from "./credit-ledger.js";
+    | ^
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+  6 | export * from "./referral.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95294046ms] [ERROR] ../../packages/payments/src/index.ts:4:1
+Module not found: Can't resolve './subscription.js'
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+> 4 | export * from "./subscription.js";
+    | ^
+  5 | export * from "./author-profile.js";
+  6 | export * from "./referral.js";
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95294046ms] [ERROR] ../../packages/payments/src/index.ts:5:1
+Module not found: Can't resolve './author-profile.js'
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+> 5 | export * from "./author-profile.js";
+    | ^
+  6 | export * from "./referral.js";
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95294046ms] [ERROR] ../../packages/payments/src/index.ts:6:1
+Module not found: Can't resolve './referral.js'
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+> 6 | export * from "./referral.js";
+    | ^
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95294514ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[95294655ms] [ERROR] ../../packages/payments/src/index.ts:1:1
+Module not found: Can't resolve './types.js'
+> 1 | export * from "./types.js";
+    | ^
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95294656ms] [ERROR] ../../packages/payments/src/index.ts:2:1
+Module not found: Can't resolve './commission.js'
+  1 | export * from "./types.js";
+> 2 | export * from "./commission.js";
+    | ^
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95294656ms] [ERROR] ../../packages/payments/src/index.ts:3:1
+Module not found: Can't resolve './credit-ledger.js'
+  1 | export * from "./types.js";
+  2 | export * from "./commission.js";
+> 3 | export * from "./credit-ledger.js";
+    | ^
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+  6 | export * from "./referral.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95294656ms] [ERROR] ../../packages/payments/src/index.ts:4:1
+Module not found: Can't resolve './subscription.js'
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+> 4 | export * from "./subscription.js";
+    | ^
+  5 | export * from "./author-profile.js";
+  6 | export * from "./referral.js";
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95294656ms] [ERROR] ../../packages/payments/src/index.ts:5:1
+Module not found: Can't resolve './author-profile.js'
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+> 5 | export * from "./author-profile.js";
+    | ^
+  6 | export * from "./referral.js";
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95294656ms] [ERROR] ../../packages/payments/src/index.ts:6:1
+Module not found: Can't resolve './referral.js'
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+> 6 | export * from "./referral.js";
+    | ^
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95294957ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[95295016ms] [ERROR] ../../packages/payments/src/index.ts:1:1
+Module not found: Can't resolve './types.js'
+> 1 | export * from "./types.js";
+    | ^
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95295016ms] [ERROR] ../../packages/payments/src/index.ts:2:1
+Module not found: Can't resolve './commission.js'
+  1 | export * from "./types.js";
+> 2 | export * from "./commission.js";
+    | ^
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95295016ms] [ERROR] ../../packages/payments/src/index.ts:3:1
+Module not found: Can't resolve './credit-ledger.js'
+  1 | export * from "./types.js";
+  2 | export * from "./commission.js";
+> 3 | export * from "./credit-ledger.js";
+    | ^
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+  6 | export * from "./referral.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95295016ms] [ERROR] ../../packages/payments/src/index.ts:4:1
+Module not found: Can't resolve './subscription.js'
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+> 4 | export * from "./subscription.js";
+    | ^
+  5 | export * from "./author-profile.js";
+  6 | export * from "./referral.js";
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95295016ms] [ERROR] ../../packages/payments/src/index.ts:5:1
+Module not found: Can't resolve './author-profile.js'
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+> 5 | export * from "./author-profile.js";
+    | ^
+  6 | export * from "./referral.js";
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95295016ms] [ERROR] ../../packages/payments/src/index.ts:6:1
+Module not found: Can't resolve './referral.js'
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+> 6 | export * from "./referral.js";
+    | ^
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95295062ms] [ERROR] ../../packages/payments/src/index.ts:1:1
+Module not found: Can't resolve './types.js'
+> 1 | export * from "./types.js";
+    | ^
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95295062ms] [ERROR] ../../packages/payments/src/index.ts:2:1
+Module not found: Can't resolve './commission.js'
+  1 | export * from "./types.js";
+> 2 | export * from "./commission.js";
+    | ^
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95295062ms] [ERROR] ../../packages/payments/src/index.ts:3:1
+Module not found: Can't resolve './credit-ledger.js'
+  1 | export * from "./types.js";
+  2 | export * from "./commission.js";
+> 3 | export * from "./credit-ledger.js";
+    | ^
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+  6 | export * from "./referral.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95295062ms] [ERROR] ../../packages/payments/src/index.ts:4:1
+Module not found: Can't resolve './subscription.js'
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+> 4 | export * from "./subscription.js";
+    | ^
+  5 | export * from "./author-profile.js";
+  6 | export * from "./referral.js";
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95295062ms] [ERROR] ../../packages/payments/src/index.ts:5:1
+Module not found: Can't resolve './author-profile.js'
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+> 5 | export * from "./author-profile.js";
+    | ^
+  6 | export * from "./referral.js";
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95295062ms] [ERROR] ../../packages/payments/src/index.ts:6:1
+Module not found: Can't resolve './referral.js'
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+> 6 | export * from "./referral.js";
+    | ^
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/app-index.js:32
+[95295138ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/sell?_rsc=1mrlt:0
+[95295140ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/api/marketplace?mine=true:0
+[95295145ms] [LOG] [Fast Refresh] done in 187ms @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[95295167ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/sell?_rsc=1mrlt:0
+[95295171ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/api/marketplace?mine=true:0
+[95295173ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/_next/static/webpack/afe4a43c1bcb9ee4.webpack.hot-update.json:0
+[95295173ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ webpack-internal:///(app-pages-browser)/../../node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:112
+[95295178ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/sell?_rsc=1mrlt:0
+[95295188ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/sell?_rsc=1mrlt:0
+[95295196ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/sell?_rsc=1mrlt:0
+[95295208ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/sell?_rsc=1mrlt:0
+[95295266ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/sell:0
+[95295461ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///../../node_modules/react-dom/cjs/react-dom.development.js:29889
+[95295498ms] Error: Module not found: Can't resolve './types.js'
+> 1 | export * from "./types.js";
+    | ^
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at getNotFoundError (file:///Users/tc/Downloads/ciao/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/parseNotFoundError.js:124:16)
+    at async getModuleBuildError (file:///Users/tc/Downloads/ciao/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/webpackModuleError.js:104:27)
+    at async (file:///Users/tc/Downloads/ciao/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/index.js:29:49)
+    at async (file:///Users/tc/Downloads/ciao/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/index.js:27:21)
+[95295497ms] [LOG] [HMR] connected @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[95295499ms] [ERROR] ../../packages/payments/src/index.ts:1:1
+Module not found: Can't resolve './types.js'
+> 1 | export * from "./types.js";
+    | ^
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95295499ms] [ERROR] ../../packages/payments/src/index.ts:2:1
+Module not found: Can't resolve './commission.js'
+  1 | export * from "./types.js";
+> 2 | export * from "./commission.js";
+    | ^
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95295499ms] [ERROR] ../../packages/payments/src/index.ts:3:1
+Module not found: Can't resolve './credit-ledger.js'
+  1 | export * from "./types.js";
+  2 | export * from "./commission.js";
+> 3 | export * from "./credit-ledger.js";
+    | ^
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+  6 | export * from "./referral.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95295499ms] [ERROR] ../../packages/payments/src/index.ts:4:1
+Module not found: Can't resolve './subscription.js'
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+> 4 | export * from "./subscription.js";
+    | ^
+  5 | export * from "./author-profile.js";
+  6 | export * from "./referral.js";
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95295499ms] [ERROR] ../../packages/payments/src/index.ts:5:1
+Module not found: Can't resolve './author-profile.js'
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+> 5 | export * from "./author-profile.js";
+    | ^
+  6 | export * from "./referral.js";
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95295499ms] [ERROR] ../../packages/payments/src/index.ts:6:1
+Module not found: Can't resolve './referral.js'
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+> 6 | export * from "./referral.js";
+    | ^
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95337989ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/sell:0
+[95338112ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///../../node_modules/react-dom/cjs/react-dom.development.js:29889
+[95338121ms] Error: Module not found: Can't resolve './types.js'
+> 1 | export * from "./types.js";
+    | ^
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at getNotFoundError (file:///Users/tc/Downloads/ciao/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/parseNotFoundError.js:124:16)
+    at async getModuleBuildError (file:///Users/tc/Downloads/ciao/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/webpackModuleError.js:104:27)
+    at async (file:///Users/tc/Downloads/ciao/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/index.js:29:49)
+    at async (file:///Users/tc/Downloads/ciao/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/index.js:27:21)
+[95338121ms] [LOG] [HMR] connected @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[95338122ms] [ERROR] ../../packages/payments/src/index.ts:1:1
+Module not found: Can't resolve './types.js'
+> 1 | export * from "./types.js";
+    | ^
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95338122ms] [ERROR] ../../packages/payments/src/index.ts:2:1
+Module not found: Can't resolve './commission.js'
+  1 | export * from "./types.js";
+> 2 | export * from "./commission.js";
+    | ^
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95338122ms] [ERROR] ../../packages/payments/src/index.ts:3:1
+Module not found: Can't resolve './credit-ledger.js'
+  1 | export * from "./types.js";
+  2 | export * from "./commission.js";
+> 3 | export * from "./credit-ledger.js";
+    | ^
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+  6 | export * from "./referral.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95338122ms] [ERROR] ../../packages/payments/src/index.ts:4:1
+Module not found: Can't resolve './subscription.js'
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+> 4 | export * from "./subscription.js";
+    | ^
+  5 | export * from "./author-profile.js";
+  6 | export * from "./referral.js";
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95338122ms] [ERROR] ../../packages/payments/src/index.ts:5:1
+Module not found: Can't resolve './author-profile.js'
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+> 5 | export * from "./author-profile.js";
+    | ^
+  6 | export * from "./referral.js";
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95338122ms] [ERROR] ../../packages/payments/src/index.ts:6:1
+Module not found: Can't resolve './referral.js'
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+> 6 | export * from "./referral.js";
+    | ^
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95347410ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/sell:0
+[95347525ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///../../node_modules/react-dom/cjs/react-dom.development.js:29889
+[95347533ms] Error: Module not found: Can't resolve './types.js'
+> 1 | export * from "./types.js";
+    | ^
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at getNotFoundError (file:///Users/tc/Downloads/ciao/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/parseNotFoundError.js:124:16)
+    at async getModuleBuildError (file:///Users/tc/Downloads/ciao/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/webpackModuleError.js:104:27)
+    at async (file:///Users/tc/Downloads/ciao/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/index.js:29:49)
+    at async (file:///Users/tc/Downloads/ciao/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/index.js:27:21)
+[95347533ms] [LOG] [HMR] connected @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[95347534ms] [ERROR] ../../packages/payments/src/index.ts:1:1
+Module not found: Can't resolve './types.js'
+> 1 | export * from "./types.js";
+    | ^
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95347534ms] [ERROR] ../../packages/payments/src/index.ts:2:1
+Module not found: Can't resolve './commission.js'
+  1 | export * from "./types.js";
+> 2 | export * from "./commission.js";
+    | ^
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95347534ms] [ERROR] ../../packages/payments/src/index.ts:3:1
+Module not found: Can't resolve './credit-ledger.js'
+  1 | export * from "./types.js";
+  2 | export * from "./commission.js";
+> 3 | export * from "./credit-ledger.js";
+    | ^
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+  6 | export * from "./referral.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95347534ms] [ERROR] ../../packages/payments/src/index.ts:4:1
+Module not found: Can't resolve './subscription.js'
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+> 4 | export * from "./subscription.js";
+    | ^
+  5 | export * from "./author-profile.js";
+  6 | export * from "./referral.js";
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95347534ms] [ERROR] ../../packages/payments/src/index.ts:5:1
+Module not found: Can't resolve './author-profile.js'
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+> 5 | export * from "./author-profile.js";
+    | ^
+  6 | export * from "./referral.js";
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95347534ms] [ERROR] ../../packages/payments/src/index.ts:6:1
+Module not found: Can't resolve './referral.js'
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+> 6 | export * from "./referral.js";
+    | ^
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95352577ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/sell:0
+[95352664ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///../../node_modules/react-dom/cjs/react-dom.development.js:29889
+[95352669ms] Error: Module not found: Can't resolve './types.js'
+> 1 | export * from "./types.js";
+    | ^
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at getNotFoundError (file:///Users/tc/Downloads/ciao/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/parseNotFoundError.js:124:16)
+    at async getModuleBuildError (file:///Users/tc/Downloads/ciao/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/webpackModuleError.js:104:27)
+    at async (file:///Users/tc/Downloads/ciao/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/index.js:29:49)
+    at async (file:///Users/tc/Downloads/ciao/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/index.js:27:21)
+[95352670ms] [LOG] [HMR] connected @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[95352670ms] [ERROR] ../../packages/payments/src/index.ts:1:1
+Module not found: Can't resolve './types.js'
+> 1 | export * from "./types.js";
+    | ^
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95352670ms] [ERROR] ../../packages/payments/src/index.ts:2:1
+Module not found: Can't resolve './commission.js'
+  1 | export * from "./types.js";
+> 2 | export * from "./commission.js";
+    | ^
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95352671ms] [ERROR] ../../packages/payments/src/index.ts:3:1
+Module not found: Can't resolve './credit-ledger.js'
+  1 | export * from "./types.js";
+  2 | export * from "./commission.js";
+> 3 | export * from "./credit-ledger.js";
+    | ^
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+  6 | export * from "./referral.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95352671ms] [ERROR] ../../packages/payments/src/index.ts:4:1
+Module not found: Can't resolve './subscription.js'
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+> 4 | export * from "./subscription.js";
+    | ^
+  5 | export * from "./author-profile.js";
+  6 | export * from "./referral.js";
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95352671ms] [ERROR] ../../packages/payments/src/index.ts:5:1
+Module not found: Can't resolve './author-profile.js'
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+> 5 | export * from "./author-profile.js";
+    | ^
+  6 | export * from "./referral.js";
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[95352671ms] [ERROR] ../../packages/payments/src/index.ts:6:1
+Module not found: Can't resolve './referral.js'
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+> 6 | export * from "./referral.js";
+    | ^
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[98379176ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/sell:0
+[98379405ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///../../node_modules/react-dom/cjs/react-dom.development.js:29889
+[98379443ms] Error: Module not found: Can't resolve './types.js'
+> 1 | export * from "./types.js";
+    | ^
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at getNotFoundError (file:///Users/tc/Downloads/ciao/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/parseNotFoundError.js:124:16)
+    at async getModuleBuildError (file:///Users/tc/Downloads/ciao/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/webpackModuleError.js:104:27)
+    at async (file:///Users/tc/Downloads/ciao/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/index.js:29:49)
+    at async (file:///Users/tc/Downloads/ciao/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/index.js:27:21)
+[98379443ms] [LOG] [HMR] connected @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[98379446ms] [ERROR] ../../packages/payments/src/index.ts:1:1
+Module not found: Can't resolve './types.js'
+> 1 | export * from "./types.js";
+    | ^
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[98379447ms] [ERROR] ../../packages/payments/src/index.ts:2:1
+Module not found: Can't resolve './commission.js'
+  1 | export * from "./types.js";
+> 2 | export * from "./commission.js";
+    | ^
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[98379447ms] [ERROR] ../../packages/payments/src/index.ts:3:1
+Module not found: Can't resolve './credit-ledger.js'
+  1 | export * from "./types.js";
+  2 | export * from "./commission.js";
+> 3 | export * from "./credit-ledger.js";
+    | ^
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+  6 | export * from "./referral.js";
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[98379447ms] [ERROR] ../../packages/payments/src/index.ts:4:1
+Module not found: Can't resolve './subscription.js'
+  2 | export * from "./commission.js";
+  3 | export * from "./credit-ledger.js";
+> 4 | export * from "./subscription.js";
+    | ^
+  5 | export * from "./author-profile.js";
+  6 | export * from "./referral.js";
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[98379447ms] [ERROR] ../../packages/payments/src/index.ts:5:1
+Module not found: Can't resolve './author-profile.js'
+  3 | export * from "./credit-ledger.js";
+  4 | export * from "./subscription.js";
+> 5 | export * from "./author-profile.js";
+    | ^
+  6 | export * from "./referral.js";
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[98379447ms] [ERROR] ../../packages/payments/src/index.ts:6:1
+Module not found: Can't resolve './referral.js'
+  4 | export * from "./subscription.js";
+  5 | export * from "./author-profile.js";
+> 6 | export * from "./referral.js";
+    | ^
+  7 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/marketplace/route.ts @ webpack-internal:///../../node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62

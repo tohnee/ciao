@@ -1,0 +1,29 @@
+{
+  "name": "ciao",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "npm@10.9.4",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --cache-dir=.turbo/cache",
+    "build": "turbo run build --cache-dir=.turbo/cache",
+    "lint": "turbo run lint --cache-dir=.turbo/cache",
+    "typecheck": "turbo run typecheck --cache-dir=.turbo/cache",
+    "test": "vitest run",
+    "prisma:generate": "npm run prisma:generate --workspace @ciao/web"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1",
+    "turbo": "^2.5.8",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "@fontsource/dm-serif-display": "^5.2.8",
+    "@fontsource/sora": "^5.2.8",
+    "lucide-react": "^1.14.0"
+  }
+}

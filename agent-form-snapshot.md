@@ -1,0 +1,70 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - link "C CIAO v0.2" [ref=e5] [cursor=pointer]:
+        - /url: /home
+        - generic [ref=e6]: C
+        - generic [ref=e7]:
+          - text: CIAO
+          - paragraph [ref=e8]: v0.2
+      - navigation [ref=e10]:
+        - paragraph [ref=e11]: Workspace
+        - link "Home" [ref=e12] [cursor=pointer]:
+          - /url: /home
+          - img [ref=e13]
+          - generic [ref=e16]: Home
+        - link "Decisions" [ref=e17] [cursor=pointer]:
+          - /url: /decisions
+          - img [ref=e18]
+          - generic [ref=e22]: Decisions
+        - link "Outcomes" [ref=e23] [cursor=pointer]:
+          - /url: /outcomes
+          - img [ref=e24]
+          - generic [ref=e27]: Outcomes
+        - link "Memory" [ref=e28] [cursor=pointer]:
+          - /url: /memory
+          - img [ref=e29]
+          - generic [ref=e37]: Memory
+        - link "Advanced" [ref=e38] [cursor=pointer]:
+          - /url: /advanced
+          - img [ref=e39]
+          - generic [ref=e42]: Advanced
+        - paragraph [ref=e43]: Agents
+        - link "Agents" [ref=e44] [cursor=pointer]:
+          - /url: /agents
+          - img [ref=e45]
+          - generic [ref=e48]: Agents
+        - link "Skills" [ref=e50] [cursor=pointer]:
+          - /url: /skills
+          - img [ref=e51]
+          - generic [ref=e53]: Skills
+        - link "Teams" [ref=e54] [cursor=pointer]:
+          - /url: /teams
+          - img [ref=e55]
+          - generic [ref=e60]: Teams
+    - main [ref=e61]:
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - heading "New Agent" [level=1] [ref=e65]
+          - paragraph [ref=e66]: Configure a new AI agent with custom instructions.
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - generic [ref=e69]: Name
+            - textbox "e.g. Novel Writer" [ref=e70]
+          - generic [ref=e71]:
+            - generic [ref=e72]: Description
+            - textbox "What does this agent do?" [ref=e73]
+          - generic [ref=e74]:
+            - generic [ref=e75]: System Prompt
+            - textbox "You are a helpful agent that..." [ref=e76]
+          - generic [ref=e77]:
+            - generic [ref=e78]:
+              - generic [ref=e79]: Provider
+              - textbox "anthropic / openai" [ref=e80]
+            - generic [ref=e81]:
+              - generic [ref=e82]: Model
+              - textbox "claude-sonnet-4-20250514" [ref=e83]
+          - generic [ref=e84]:
+            - button "Create Agent" [ref=e85] [cursor=pointer]
+            - button "Cancel" [ref=e86] [cursor=pointer]
+  - alert [ref=e87]

@@ -1,0 +1,56 @@
+- generic [ref=e1]:
+  - alert [ref=e20]
+  - generic [ref=e21]:
+    - complementary [ref=e22]:
+      - link "C CIAO Intent-driven" [ref=e24] [cursor=pointer]:
+        - /url: /home
+        - generic [ref=e25]: C
+        - generic [ref=e26]:
+          - text: CIAO
+          - paragraph [ref=e27]: Intent-driven
+      - navigation [ref=e29]:
+        - paragraph [ref=e30]: Workspace
+        - link "Home" [ref=e31] [cursor=pointer]:
+          - /url: /home
+          - img [ref=e32]
+          - generic [ref=e35]: Home
+        - link "Decisions" [active] [ref=e37] [cursor=pointer]:
+          - /url: /decisions
+          - img [ref=e38]
+          - generic [ref=e42]: Decisions
+        - link "Outcomes" [ref=e43] [cursor=pointer]:
+          - /url: /outcomes
+          - img [ref=e44]
+          - generic [ref=e47]: Outcomes
+        - link "Memory" [ref=e48] [cursor=pointer]:
+          - /url: /memory
+          - img [ref=e49]
+          - generic [ref=e57]: Memory
+        - link "Advanced" [ref=e58] [cursor=pointer]:
+          - /url: /advanced
+          - img [ref=e59]
+          - generic [ref=e62]: Advanced
+        - paragraph [ref=e64]: Agents
+        - link "Agents" [ref=e65] [cursor=pointer]:
+          - /url: /agents
+          - img [ref=e66]
+          - generic [ref=e69]: Agents
+        - link "Skills" [ref=e70] [cursor=pointer]:
+          - /url: /skills
+          - img [ref=e71]
+          - generic [ref=e73]: Skills
+        - link "Teams" [ref=e74] [cursor=pointer]:
+          - /url: /teams
+          - img [ref=e75]
+          - generic [ref=e80]: Teams
+        - link "Marketplace" [ref=e81] [cursor=pointer]:
+          - /url: /marketplace
+          - img [ref=e82]
+          - generic [ref=e86]: Marketplace
+      - paragraph [ref=e88]: © 2026 CIAO
+    - main [ref=e89]:
+      - generic [ref=e134]:
+        - img [ref=e136]
+        - generic [ref=e139]:
+          - heading "No decisions waiting" [level=3] [ref=e140]
+          - paragraph [ref=e141]: CIAO only interrupts when a judgment call matters.

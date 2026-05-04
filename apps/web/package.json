@@ -1,0 +1,43 @@
+{
+  "name": "@ciao/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "prisma:generate": "prisma generate",
+    "prisma:seed": "prisma db seed"
+  },
+  "prisma": {
+    "seed": "npx tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@ciao/engine": "0.1.0",
+    "@ciao/payments": "0.1.0",
+    "@ciao/providers": "0.1.0",
+    "@ciao/shared": "0.1.0",
+    "@prisma/client": "^6.7.0",
+    "bcryptjs": "^3.0.3",
+    "clsx": "^2.1.1",
+    "ioredis": "^5.8.2",
+    "next": "^14.2.33",
+    "next-auth": "^5.0.0-beta.25",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.25.76",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/react": "^18.3.26",
+    "@types/react-dom": "^18.3.7",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.33",
+    "postcss": "^8.5.6",
+    "prisma": "^6.7.0",
+    "tailwindcss": "^3.4.17"
+  }
+}

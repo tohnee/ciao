@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ciao/shared": ["packages/shared/src/index.ts"],
+      "@ciao/shared/*": ["packages/shared/src/*"],
+      "@ciao/engine": ["packages/engine/src/index.ts"],
+      "@ciao/engine/*": ["packages/engine/src/*"],
+      "@ciao/providers": ["packages/providers/src/index.ts"],
+      "@ciao/providers/*": ["packages/providers/src/*"]
+    }
+  }
+}

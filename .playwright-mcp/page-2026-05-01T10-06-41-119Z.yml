@@ -1,0 +1,87 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - link "C CIAO v0.2" [ref=e5] [cursor=pointer]:
+        - /url: /home
+        - generic [ref=e6]: C
+        - generic [ref=e7]:
+          - text: CIAO
+          - paragraph [ref=e8]: v0.2
+      - navigation [ref=e10]:
+        - paragraph [ref=e11]: Workspace
+        - link "Home" [ref=e12] [cursor=pointer]:
+          - /url: /home
+          - img [ref=e13]
+          - generic [ref=e16]: Home
+        - link "Decisions" [ref=e17] [cursor=pointer]:
+          - /url: /decisions
+          - img [ref=e18]
+          - generic [ref=e22]: Decisions
+        - link "Outcomes" [ref=e23] [cursor=pointer]:
+          - /url: /outcomes
+          - img [ref=e24]
+          - generic [ref=e27]: Outcomes
+        - link "Memory" [ref=e28] [cursor=pointer]:
+          - /url: /memory
+          - img [ref=e29]
+          - generic [ref=e37]: Memory
+        - link "Advanced" [ref=e38] [cursor=pointer]:
+          - /url: /advanced
+          - img [ref=e39]
+          - generic [ref=e42]: Advanced
+        - paragraph [ref=e43]: Agents
+        - link "Agents" [ref=e44] [cursor=pointer]:
+          - /url: /agents
+          - img [ref=e45]
+          - generic [ref=e48]: Agents
+        - link "Skills" [ref=e50] [cursor=pointer]:
+          - /url: /skills
+          - img [ref=e51]
+          - generic [ref=e53]: Skills
+        - link "Teams" [ref=e54] [cursor=pointer]:
+          - /url: /teams
+          - img [ref=e55]
+          - generic [ref=e60]: Teams
+    - main [ref=e61]:
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - heading "Agents" [level=1] [ref=e91]
+            - paragraph [ref=e92]: Create and manage your AI agents.
+          - link "New Agent" [ref=e93] [cursor=pointer]:
+            - /url: /agents/new
+            - button "New Agent" [ref=e94]:
+              - img [ref=e95]
+              - text: New Agent
+        - generic [ref=e96]:
+          - link "Test Agent Custom active A test agent for debugging 0 skills 0 runs Delete" [ref=e97] [cursor=pointer]:
+            - /url: /agents/cmomr01v1003woywhng3xhsa9
+            - generic [ref=e98]:
+              - generic [ref=e99]:
+                - generic [ref=e100]:
+                  - img [ref=e102]
+                  - generic [ref=e105]:
+                    - heading "Test Agent" [level=3] [ref=e106]
+                    - paragraph [ref=e107]: Custom
+                - generic [ref=e108]: active
+              - paragraph [ref=e109]: A test agent for debugging
+              - generic [ref=e110]:
+                - generic [ref=e111]: 0 skills
+                - generic [ref=e112]: 0 runs
+              - button "Delete" [ref=e113]
+          - link "小说写作 Custom active 写作 0 skills 0 runs Delete" [ref=e114] [cursor=pointer]:
+            - /url: /agents/cmomqsk8w000foywh1s6q3g9u
+            - generic [ref=e115]:
+              - generic [ref=e116]:
+                - generic [ref=e117]:
+                  - img [ref=e119]
+                  - generic [ref=e122]:
+                    - heading "小说写作" [level=3] [ref=e123]
+                    - paragraph [ref=e124]: Custom
+                - generic [ref=e125]: active
+              - paragraph [ref=e126]: 写作
+              - generic [ref=e127]:
+                - generic [ref=e128]: 0 skills
+                - generic [ref=e129]: 0 runs
+              - button "Delete" [ref=e130]
+  - alert [ref=e87]

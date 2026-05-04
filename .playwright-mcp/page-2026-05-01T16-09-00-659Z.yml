@@ -1,0 +1,32 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - link "C" [ref=e5] [cursor=pointer]:
+        - /url: /home
+      - heading "Create an account" [level=1] [ref=e6]
+      - paragraph [ref=e7]: Get started with CIAO
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: Name (optional)
+        - textbox "Name (optional)" [ref=e11]:
+          - /placeholder: Your name
+      - generic [ref=e12]:
+        - generic [ref=e13]: Email
+        - textbox "Email" [ref=e14]:
+          - /placeholder: you@example.com
+      - generic [ref=e15]:
+        - generic [ref=e16]: Password
+        - textbox "Password" [ref=e17]:
+          - /placeholder: At least 6 characters
+      - generic [ref=e18]:
+        - generic [ref=e19]: Confirm password
+        - textbox "Confirm password" [ref=e20]:
+          - /placeholder: Repeat password
+      - button "Create account" [ref=e21] [cursor=pointer]
+    - paragraph [ref=e22]:
+      - text: Already have an account?
+      - link "Sign in" [ref=e23] [cursor=pointer]:
+        - /url: /login
+    - link "Try CIAO without signing in" [ref=e25] [cursor=pointer]:
+      - /url: /trial
+  - alert [ref=e26]

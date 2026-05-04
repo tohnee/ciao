@@ -1,0 +1,60 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - link "C CIAO v0.2" [ref=e5] [cursor=pointer]:
+        - /url: /home
+        - generic [ref=e6]: C
+        - generic [ref=e7]:
+          - text: CIAO
+          - paragraph [ref=e8]: v0.2
+      - navigation [ref=e10]:
+        - paragraph [ref=e11]: Workspace
+        - link "Home" [ref=e12] [cursor=pointer]:
+          - /url: /home
+          - img [ref=e13]
+          - generic [ref=e16]: Home
+        - link "Decisions" [ref=e18] [cursor=pointer]:
+          - /url: /decisions
+          - img [ref=e19]
+          - generic [ref=e23]: Decisions
+        - link "Outcomes" [ref=e24] [cursor=pointer]:
+          - /url: /outcomes
+          - img [ref=e25]
+          - generic [ref=e28]: Outcomes
+        - link "Memory" [ref=e29] [cursor=pointer]:
+          - /url: /memory
+          - img [ref=e30]
+          - generic [ref=e38]: Memory
+        - link "Advanced" [ref=e39] [cursor=pointer]:
+          - /url: /advanced
+          - img [ref=e40]
+          - generic [ref=e43]: Advanced
+    - main [ref=e44]:
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - heading "CIAO is calm." [level=1] [ref=e51]
+          - img [ref=e52]
+        - generic [ref=e55]:
+          - textbox "What should CIAO take care of?" [ref=e56]
+          - generic [ref=e57]:
+            - generic [ref=e58]:
+              - img [ref=e59]
+              - generic [ref=e61]: Mode
+              - generic [ref=e62]:
+                - button "ask" [ref=e63] [cursor=pointer]
+                - button "draft" [ref=e64] [cursor=pointer]
+                - button "act" [ref=e65] [cursor=pointer]
+                - button "ship" [ref=e66] [cursor=pointer]
+                - button "watch" [ref=e67] [cursor=pointer]
+                - button "review" [ref=e68] [cursor=pointer]
+            - generic [ref=e69]:
+              - img [ref=e70]
+              - generic [ref=e75]: Cost
+              - generic [ref=e76]:
+                - button "frugal" [ref=e77] [cursor=pointer]
+                - button "balanced" [ref=e78] [cursor=pointer]
+                - button "thorough" [ref=e79] [cursor=pointer]
+        - heading "Now" [level=2] [ref=e81]
+        - heading "Needs You" [level=2] [ref=e83]
+        - heading "Outcomes" [level=2] [ref=e85]
+  - alert [ref=e86]

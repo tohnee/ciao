@@ -1,0 +1,426 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Workspace {
+  id        String   @id @default(cuid())
+  name      String
+  slug      String   @unique
+  settings  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user           User?
+  intents        Intent[]
+  memories       Memory[]
+  events         EventLog[]
+  signals        Signal[]
+  agents         Agent[]
+  skills         Skill[]
+  teams          Team[]
+  creditAccount  CreditAccount?
+  authorProfile  AuthorProfile?
+}
+
+model Intent {
+  id              String   @id @default(cuid())
+  workspaceId     String
+  rawInput        String
+  title           String
+  interpretedGoal String
+  mode            String
+  costMode        String   @default("balanced")
+  state           String   @default("understanding")
+  importance      String   @default("normal")
+  riskLevel       String   @default("unknown")
+  constraints     String?
+  desiredOutcome  String?
+  previewMessage  String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  workspace Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  decisions Decision[]
+  outcomes  Outcome[]
+  signals   Signal[]
+  agentRuns AgentRun[]
+}
+
+model Decision {
+  id               String    @id @default(cuid())
+  intentId         String
+  title            String
+  question         String
+  recommendation   String?
+  options          String
+  severity         String    @default("medium")
+  state            String    @default("open")
+  resolvedOptionId String?
+  resolvedAt       DateTime?
+  expiresAt        DateTime?
+  createdAt        DateTime  @default(now())
+
+  intent Intent @relation(fields: [intentId], references: [id], onDelete: Cascade)
+}
+
+model Outcome {
+  id          String   @id @default(cuid())
+  intentId    String
+  title       String
+  summary     String
+  changed     String?
+  verified    String?
+  risks       String?
+  confidence  String
+  costSummary String?
+  receipt     String?
+  state       String   @default("ready")
+  createdAt   DateTime @default(now())
+
+  intent Intent @relation(fields: [intentId], references: [id], onDelete: Cascade)
+}
+
+model Signal {
+  id          String   @id @default(cuid())
+  workspaceId String
+  intentId    String?
+  kind        String
+  level       String
+  message     String
+  compact     Boolean  @default(true)
+  metadata    String?
+  createdAt   DateTime @default(now())
+
+  workspace Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  intent    Intent?    @relation(fields: [intentId], references: [id], onDelete: Cascade)
+}
+
+model Memory {
+  id            String   @id @default(cuid())
+  workspaceId   String
+  outcomeId     String?
+  title         String
+  trigger       String
+  compactRule   String
+  fullProcedure String?
+  examples      String?
+  confidence    Float    @default(0.5)
+  status        String   @default("active")
+  lastUsedAt    DateTime?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  workspace Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+}
+
+model EventLog {
+  id          String   @id @default(cuid())
+  workspaceId String
+  stream      String
+  type        String
+  intentId    String?
+  payload     String
+  createdAt   DateTime @default(now())
+
+  workspace Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+}
+
+enum AgentStatus {
+  active
+  inactive
+  archived
+}
+
+enum AgentType {
+  system
+  custom
+  marketplace
+}
+
+enum CreditEntryType {
+  CREDIT
+  DEBIT
+}
+
+enum SubscriptionPlan {
+  WEEKLY
+  MONTHLY
+}
+
+enum SubscriptionStatus {
+  ACTIVE
+  EXPIRED
+  CANCELLED
+  PAST_DUE
+}
+
+enum AuthorTier {
+  BRONZE
+  SILVER
+  GOLD
+  PLATINUM
+}
+
+enum ListingStatus {
+  ACTIVE
+  UNLISTED
+}
+
+enum ReferralStatus {
+  PENDING
+  ACTIVE
+  COMPLETED
+  EXPIRED
+}
+
+model Agent {
+  id            String                @id @default(cuid())
+  workspaceId   String
+  name          String
+  description   String?
+  type          AgentType             @default(custom)
+  status        AgentStatus           @default(active)
+  provider      String?
+  model         String?
+  systemPrompt  String?
+  temperature   Float?                @default(0.7)
+  maxTokens     Int?                  @default(4096)
+  price         Float?                @default(0)
+  metadata      String?
+  avatarUrl     String?
+  createdAt     DateTime              @default(now())
+  updatedAt     DateTime              @updatedAt
+
+  workspace Workspace        @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  skills    AgentSkill[]
+  runs      AgentRun[]
+  memories  AgentMemory[]
+  teams     TeamMember[]
+  listing   MarketplaceListing?
+}
+
+model Skill {
+  id          String   @id @default(cuid())
+  workspaceId String
+  name        String
+  description String?
+  content     String
+  category    String   @default("general")
+  version     String   @default("1.0")
+  metadata    String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  workspace Workspace  @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  agents    AgentSkill[]
+}
+
+model AgentSkill {
+  agentId   String
+  skillId   String
+  enabled   Boolean  @default(true)
+  assignedAt DateTime @default(now())
+
+  agent Agent @relation(fields: [agentId], references: [id], onDelete: Cascade)
+  skill Skill @relation(fields: [skillId], references: [id], onDelete: Cascade)
+
+  @@id([agentId, skillId])
+}
+
+model Team {
+  id          String   @id @default(cuid())
+  workspaceId String
+  name        String
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  workspace Workspace    @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  members   TeamMember[]
+}
+
+model TeamMember {
+  id      String @id @default(cuid())
+  teamId  String
+  agentId String
+  role    String @default("member")
+
+  team  Team  @relation(fields: [teamId], references: [id], onDelete: Cascade)
+  agent Agent @relation(fields: [agentId], references: [id], onDelete: Cascade)
+
+  @@unique([teamId, agentId])
+}
+
+model AgentRun {
+  id          String   @id @default(cuid())
+  agentId     String
+  intentId    String
+  status      String   @default("running")
+  startedAt   DateTime @default(now())
+  completedAt DateTime?
+
+  agent  Agent  @relation(fields: [agentId], references: [id], onDelete: Cascade)
+  intent Intent @relation(fields: [intentId], references: [id], onDelete: Cascade)
+}
+
+model AgentMemory {
+  id          String   @id @default(cuid())
+  agentId     String
+  content     String
+  type        String   @default("observation")
+  source      String?
+  confidence  Float    @default(0.5)
+  tags        String?
+  createdAt   DateTime @default(now())
+  lastAccess  DateTime @default(now())
+
+  agent Agent @relation(fields: [agentId], references: [id], onDelete: Cascade)
+}
+
+model MarketplaceListing {
+  id          String   @id @default(cuid())
+  agentId     String   @unique
+  price       Float
+  weeklyPrice Int?
+  monthlyPrice Int?
+  description String
+  rating      Float    @default(0)
+  downloads   Int      @default(0)
+  featured    Boolean  @default(false)
+  status      ListingStatus @default(ACTIVE)
+  totalSubscribers Int  @default(0)
+  totalEarned Int      @default(0)
+  tags        String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  agent         Agent            @relation(fields: [agentId], references: [id], onDelete: Cascade)
+  transactions  Transaction[]
+  subscriptions Subscription[]
+  reviews       MarketplaceReview[]
+}
+
+model Transaction {
+  id          String   @id @default(cuid())
+  listingId   String
+  buyerId     String
+  amount      Float
+  status      String   @default("pending")
+  createdAt   DateTime @default(now())
+  completedAt DateTime?
+
+  listing MarketplaceListing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+}
+
+model User {
+  id          String   @id @default(cuid())
+  email       String   @unique
+  password    String
+  name        String?
+  image       String?
+  workspaceId String   @unique
+  workspace   Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model CreditAccount {
+  id          String   @id @default(cuid())
+  workspaceId String   @unique
+  balance     Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  workspace Workspace    @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  entries   CreditEntry[]
+}
+
+model CreditEntry {
+  id            String          @id @default(cuid())
+  accountId     String
+  amount        Int
+  balanceBefore Int
+  balanceAfter  Int
+  type          CreditEntryType
+  referenceType String? // subscription | referral | reward | topup | payout | template_sale | fee
+  referenceId   String?
+  description   String?
+  createdAt     DateTime        @default(now())
+
+  account CreditAccount @relation(fields: [accountId], references: [id], onDelete: Cascade)
+
+  @@index([accountId, createdAt])
+}
+
+model AuthorProfile {
+  id               String     @id @default(cuid())
+  workspaceId      String     @unique
+  tier             AuthorTier @default(BRONZE)
+  totalEarned      Int        @default(0)
+  totalSubscribers Int        @default(0)
+  rating           Float      @default(0)
+  ratingCount      Int        @default(0)
+  commissionRate   Float      @default(0.20)
+  displayName      String?
+  bio              String?
+  joinedAt         DateTime   @default(now())
+  lastPayoutAt     DateTime?
+
+  workspace Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  referralsFrom Referral[] @relation("referrer")
+}
+
+model Subscription {
+  id                    String             @id @default(cuid())
+  subscriberWorkspaceId String
+  authorWorkspaceId     String
+  listingId             String
+  plan                  SubscriptionPlan
+  status                SubscriptionStatus    @default(ACTIVE)
+  currentPeriodStart    DateTime
+  currentPeriodEnd      DateTime
+  autoRenew             Boolean               @default(true)
+  priceAtSubscription   Int
+  platformFeePercent    Float
+  cancelledAt           DateTime?
+  createdAt             DateTime              @default(now())
+  updatedAt             DateTime              @updatedAt
+
+  listing MarketplaceListing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+
+  @@index([subscriberWorkspaceId, status])
+  @@index([authorWorkspaceId, status])
+}
+
+model MarketplaceReview {
+  id                  String   @id @default(cuid())
+  listingId           String
+  reviewerWorkspaceId String
+  rating              Int
+  text                String?
+  createdAt           DateTime @default(now())
+
+  listing MarketplaceListing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+
+  @@unique([listingId, reviewerWorkspaceId])
+}
+
+model Referral {
+  id                  String          @id @default(cuid())
+  referrerWorkspaceId String
+  refereeWorkspaceId  String          @unique
+  code                String          @unique
+  status              ReferralStatus  @default(PENDING)
+  rewardCredits       Int             @default(0)
+  expiresAt           DateTime?
+  createdAt           DateTime        @default(now())
+
+  referrer AuthorProfile @relation("referrer", fields: [referrerWorkspaceId], references: [workspaceId])
+
+  @@index([referrerWorkspaceId])
+}

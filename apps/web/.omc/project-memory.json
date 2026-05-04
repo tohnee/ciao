@@ -1,0 +1,360 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1777781302634,
+  "projectRoot": "/Users/tc/Downloads/ciao/apps/web",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "next",
+        "version": "14.2.33",
+        "category": "fullstack"
+      },
+      {
+        "name": "react",
+        "version": "18.3.1",
+        "category": "frontend"
+      },
+      {
+        "name": "react-dom",
+        "version": "18.3.1",
+        "category": "frontend"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "npx tsc --noEmit 2>&1 | head -30",
+    "testCommand": null,
+    "lintCommand": "npm run lint",
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "lint": "next lint",
+      "typecheck": "tsc --noEmit",
+      "prisma:generate": "prisma generate",
+      "prisma:seed": "prisma db seed"
+    }
+  },
+  "conventions": {
+    "namingStyle": "camelCase",
+    "importStyle": "ES modules",
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "app",
+      "components",
+      "lib",
+      "public"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "app": {
+      "path": "app",
+      "purpose": "Application code",
+      "fileCount": 2,
+      "lastAccessed": 1777781302617,
+      "keyFiles": [
+        "layout.tsx",
+        "page.tsx"
+      ]
+    },
+    "components": {
+      "path": "components",
+      "purpose": "UI components",
+      "fileCount": 0,
+      "lastAccessed": 1777781302619,
+      "keyFiles": []
+    },
+    "hooks": {
+      "path": "hooks",
+      "purpose": null,
+      "fileCount": 3,
+      "lastAccessed": 1777781302620,
+      "keyFiles": [
+        "useHome.ts",
+        "useIntent.ts",
+        "useSSE.ts"
+      ]
+    },
+    "lib": {
+      "path": "lib",
+      "purpose": "Library code",
+      "fileCount": 13,
+      "lastAccessed": 1777781302620,
+      "keyFiles": [
+        "api-helpers.ts",
+        "auth.config.ts",
+        "auth.ts",
+        "demo-runtime.ts",
+        "event-repository.ts"
+      ]
+    },
+    "prisma": {
+      "path": "prisma",
+      "purpose": null,
+      "fileCount": 3,
+      "lastAccessed": 1777781302621,
+      "keyFiles": [
+        "dev.db",
+        "schema.prisma",
+        "seed.ts"
+      ]
+    },
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 1,
+      "lastAccessed": 1777781302621,
+      "keyFiles": [
+        "favicon.svg"
+      ]
+    },
+    "stores": {
+      "path": "stores",
+      "purpose": null,
+      "fileCount": 6,
+      "lastAccessed": 1777781302621,
+      "keyFiles": [
+        "agents.ts",
+        "command.ts",
+        "home.ts",
+        "marketplace.ts",
+        "skills.ts"
+      ]
+    },
+    "styles": {
+      "path": "styles",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1777781302621,
+      "keyFiles": [
+        "globals.css"
+      ]
+    },
+    "app/api": {
+      "path": "app/api",
+      "purpose": "API routes",
+      "fileCount": 0,
+      "lastAccessed": 1777781302622,
+      "keyFiles": []
+    },
+    "prisma/migrations": {
+      "path": "prisma/migrations",
+      "purpose": "Database migrations",
+      "fileCount": 1,
+      "lastAccessed": 1777781302623,
+      "keyFiles": [
+        "migration_lock.toml"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "lib/runtime-repository.ts",
+      "accessCount": 4,
+      "lastAccessed": 1777782226951,
+      "type": "file"
+    },
+    {
+      "path": "app/marketplace/[id]/page.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1777785296222,
+      "type": "file"
+    },
+    {
+      "path": "components/marketplace/MarketplaceGrid.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1777785296563,
+      "type": "file"
+    },
+    {
+      "path": "components/layout/Header.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1777781716968,
+      "type": "file"
+    },
+    {
+      "path": "components/marketplace/MarketplaceCard.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1777781951760,
+      "type": "file"
+    },
+    {
+      "path": "app/buy/page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1777782211012,
+      "type": "file"
+    },
+    {
+      "path": "app/sell/page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1777782211456,
+      "type": "file"
+    },
+    {
+      "path": "app/api/marketplace/[id]/route.ts",
+      "accessCount": 3,
+      "lastAccessed": 1777782256329,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 2,
+      "lastAccessed": 1777781388087,
+      "type": "file"
+    },
+    {
+      "path": "components/layout/Nav.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1777781695047,
+      "type": "file"
+    },
+    {
+      "path": "app/layout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1777781858334,
+      "type": "file"
+    },
+    {
+      "path": "components/layout/Shell.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1777781858413,
+      "type": "file"
+    },
+    {
+      "path": "styles/globals.css",
+      "accessCount": 2,
+      "lastAccessed": 1777781872086,
+      "type": "file"
+    },
+    {
+      "path": "app/api/marketplace/[id]/reviews/route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1777781626315,
+      "type": "file"
+    },
+    {
+      "path": "tailwind.config.ts",
+      "accessCount": 1,
+      "lastAccessed": 1777781657494,
+      "type": "file"
+    },
+    {
+      "path": "app/api/subscriptions/route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1777781843174,
+      "type": "file"
+    },
+    {
+      "path": "app/marketplace/page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1777781843407,
+      "type": "file"
+    },
+    {
+      "path": "components/shared/Card.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1777781849674,
+      "type": "file"
+    },
+    {
+      "path": "components/shared/Badge.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1777781849803,
+      "type": "file"
+    },
+    {
+      "path": "components/shared/Button.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1777781849876,
+      "type": "file"
+    },
+    {
+      "path": "app/api/marketplace/route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1777781849932,
+      "type": "file"
+    },
+    {
+      "path": "app/api/author/stats/route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1777781854405,
+      "type": "file"
+    },
+    {
+      "path": "app/api/subscriptions/[id]/route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1777781854425,
+      "type": "file"
+    },
+    {
+      "path": "app/api/subscriptions/[id]/renew/route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1777781858263,
+      "type": "file"
+    },
+    {
+      "path": "components/shared/EmptyState.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1777781864621,
+      "type": "file"
+    },
+    {
+      "path": "app/api/credits/balance/route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1777781864684,
+      "type": "file"
+    },
+    {
+      "path": "components/marketplace/SubscriptionDialog.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1777781950747,
+      "type": "file"
+    },
+    {
+      "path": "components/marketplace/ReviewCard.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1777781951105,
+      "type": "file"
+    },
+    {
+      "path": "components/marketplace/ReviewForm.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1777781951450,
+      "type": "file"
+    },
+    {
+      "path": "app/subscriptions/page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1777782211917,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

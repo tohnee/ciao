@@ -1,0 +1,57 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - link "C CIAO v0.2" [ref=e5] [cursor=pointer]:
+        - /url: /home
+        - generic [ref=e6]: C
+        - generic [ref=e7]:
+          - text: CIAO
+          - paragraph [ref=e8]: v0.2
+      - navigation [ref=e10]:
+        - paragraph [ref=e11]: Workspace
+        - link "Home" [ref=e12] [cursor=pointer]:
+          - /url: /home
+          - img [ref=e13]
+          - generic [ref=e16]: Home
+        - link "Decisions" [ref=e17] [cursor=pointer]:
+          - /url: /decisions
+          - img [ref=e18]
+          - generic [ref=e22]: Decisions
+        - link "Outcomes" [ref=e23] [cursor=pointer]:
+          - /url: /outcomes
+          - img [ref=e24]
+          - generic [ref=e27]: Outcomes
+        - link "Memory" [ref=e28] [cursor=pointer]:
+          - /url: /memory
+          - img [ref=e29]
+          - generic [ref=e37]: Memory
+        - link "Advanced" [ref=e38] [cursor=pointer]:
+          - /url: /advanced
+          - img [ref=e39]
+          - generic [ref=e42]: Advanced
+        - paragraph [ref=e43]: Agents
+        - link "Agents" [ref=e44] [cursor=pointer]:
+          - /url: /agents
+          - img [ref=e45]
+          - generic [ref=e48]: Agents
+        - link "Skills" [ref=e49] [cursor=pointer]:
+          - /url: /skills
+          - img [ref=e50]
+          - generic [ref=e52]: Skills
+        - link "Teams" [ref=e54] [cursor=pointer]:
+          - /url: /teams
+          - img [ref=e55]
+          - generic [ref=e60]: Teams
+    - main [ref=e61]:
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - heading "Skills" [level=1] [ref=e66]
+            - paragraph [ref=e67]: Create and manage reusable capabilities for your agents.
+          - link "New Skill" [ref=e68] [cursor=pointer]:
+            - /url: /skills/new
+            - button "New Skill" [ref=e69]:
+              - img [ref=e70]
+              - text: New Skill
+        - generic [ref=e71]: Loading skills...
+  - alert [ref=e72]

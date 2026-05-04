@@ -1,0 +1,62 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - link "C CIAO Intent-driven" [ref=e5] [cursor=pointer]:
+        - /url: /home
+        - generic [ref=e6]: C
+        - generic [ref=e7]:
+          - text: CIAO
+          - paragraph [ref=e8]: Intent-driven
+      - navigation [ref=e10]:
+        - paragraph [ref=e11]: Workspace
+        - link "Home" [ref=e12] [cursor=pointer]:
+          - /url: /home
+          - img [ref=e13]
+          - generic [ref=e16]: Home
+        - link "Decisions" [ref=e17] [cursor=pointer]:
+          - /url: /decisions
+          - img [ref=e18]
+          - generic [ref=e22]: Decisions
+        - link "Outcomes" [ref=e23] [cursor=pointer]:
+          - /url: /outcomes
+          - img [ref=e24]
+          - generic [ref=e27]: Outcomes
+        - link "Memory" [ref=e28] [cursor=pointer]:
+          - /url: /memory
+          - img [ref=e29]
+          - generic [ref=e37]: Memory
+        - link "Advanced" [ref=e38] [cursor=pointer]:
+          - /url: /advanced
+          - img [ref=e39]
+          - generic [ref=e42]: Advanced
+        - paragraph [ref=e44]: Agents
+        - link "Agents" [ref=e45] [cursor=pointer]:
+          - /url: /agents
+          - img [ref=e46]
+          - generic [ref=e49]: Agents
+        - link "Skills" [ref=e51] [cursor=pointer]:
+          - /url: /skills
+          - img [ref=e52]
+          - generic [ref=e54]: Skills
+        - link "Teams" [ref=e55] [cursor=pointer]:
+          - /url: /teams
+          - img [ref=e56]
+          - generic [ref=e61]: Teams
+        - link "Marketplace" [ref=e62] [cursor=pointer]:
+          - /url: /marketplace
+          - img [ref=e63]
+          - generic [ref=e67]: Marketplace
+      - paragraph [ref=e69]: © 2026 CIAO
+    - main [ref=e70]:
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - heading "Agents" [level=1] [ref=e75]
+            - paragraph [ref=e76]: Create and manage your AI agents.
+          - link "New Agent" [ref=e77] [cursor=pointer]:
+            - /url: /agents/new
+            - button "New Agent" [ref=e78]:
+              - img [ref=e79]
+              - text: New Agent
+        - generic [ref=e80]: Loading agents...
+  - alert [ref=e81]

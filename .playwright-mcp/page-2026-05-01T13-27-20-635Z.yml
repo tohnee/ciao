@@ -1,0 +1,84 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e26]
+  - generic [ref=e27]:
+    - complementary [ref=e28]:
+      - link "C CIAO Intent-driven" [ref=e30] [cursor=pointer]:
+        - /url: /home
+        - generic [ref=e31]: C
+        - generic [ref=e32]:
+          - text: CIAO
+          - paragraph [ref=e33]: Intent-driven
+      - navigation [ref=e35]:
+        - paragraph [ref=e36]: Workspace
+        - link "Home" [ref=e37] [cursor=pointer]:
+          - /url: /home
+          - img [ref=e38]
+          - generic [ref=e41]: Home
+        - link "Decisions" [ref=e43] [cursor=pointer]:
+          - /url: /decisions
+          - img [ref=e44]
+          - generic [ref=e48]: Decisions
+        - link "Outcomes" [ref=e49] [cursor=pointer]:
+          - /url: /outcomes
+          - img [ref=e50]
+          - generic [ref=e53]: Outcomes
+        - link "Memory" [ref=e54] [cursor=pointer]:
+          - /url: /memory
+          - img [ref=e55]
+          - generic [ref=e63]: Memory
+        - link "Advanced" [ref=e64] [cursor=pointer]:
+          - /url: /advanced
+          - img [ref=e65]
+          - generic [ref=e68]: Advanced
+        - paragraph [ref=e70]: Agents
+        - link "Agents" [ref=e71] [cursor=pointer]:
+          - /url: /agents
+          - img [ref=e72]
+          - generic [ref=e75]: Agents
+        - link "Skills" [ref=e76] [cursor=pointer]:
+          - /url: /skills
+          - img [ref=e77]
+          - generic [ref=e79]: Skills
+        - link "Teams" [ref=e80] [cursor=pointer]:
+          - /url: /teams
+          - img [ref=e81]
+          - generic [ref=e86]: Teams
+        - link "Marketplace" [ref=e87] [cursor=pointer]:
+          - /url: /marketplace
+          - img [ref=e88]
+          - generic [ref=e92]: Marketplace
+      - paragraph [ref=e94]: © 2026 CIAO
+    - main [ref=e95]:
+      - generic [ref=e97]:
+        - heading "CIAO is calm." [level=1] [ref=e102]
+        - generic [ref=e103]:
+          - textbox "What should CIAO take care of?" [ref=e104]
+          - generic [ref=e105]:
+            - generic [ref=e106]:
+              - generic [ref=e107]:
+                - img [ref=e108]
+                - generic [ref=e110]: Mode
+              - generic [ref=e111]:
+                - button "ask" [ref=e112] [cursor=pointer]
+                - button "draft" [ref=e113] [cursor=pointer]
+                - button "act" [ref=e114] [cursor=pointer]
+                - button "ship" [ref=e115] [cursor=pointer]
+                - button "watch" [ref=e116] [cursor=pointer]
+                - button "review" [ref=e117] [cursor=pointer]
+            - generic [ref=e118]:
+              - generic [ref=e119]:
+                - img [ref=e120]
+                - generic [ref=e125]: Cost
+              - generic [ref=e126]:
+                - button "frugal" [ref=e127] [cursor=pointer]
+                - button "balanced" [ref=e128] [cursor=pointer]
+                - button "thorough" [ref=e129] [cursor=pointer]
+        - generic [ref=e130]:
+          - heading "Now" [level=2] [ref=e131]
+          - paragraph [ref=e132]: No active intents. Type a task above to get started.
+        - generic [ref=e133]:
+          - heading "Needs You" [level=2] [ref=e134]
+          - paragraph [ref=e135]: No pending decisions.
+        - generic [ref=e136]:
+          - heading "Outcomes" [level=2] [ref=e137]
+          - paragraph [ref=e138]: No outcomes yet. Completed intents will appear here.

@@ -1,0 +1,78 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - link "C CIAO Intent-driven" [ref=e5] [cursor=pointer]:
+        - /url: /home
+        - generic [ref=e6]: C
+        - generic [ref=e7]:
+          - text: CIAO
+          - paragraph [ref=e8]: Intent-driven
+      - navigation [ref=e10]:
+        - paragraph [ref=e11]: Workspace
+        - link "Home" [ref=e12] [cursor=pointer]:
+          - /url: /home
+          - img [ref=e13]
+          - generic [ref=e16]: Home
+        - link "Decisions" [ref=e17] [cursor=pointer]:
+          - /url: /decisions
+          - img [ref=e18]
+          - generic [ref=e22]: Decisions
+        - link "Outcomes" [ref=e23] [cursor=pointer]:
+          - /url: /outcomes
+          - img [ref=e24]
+          - generic [ref=e27]: Outcomes
+        - link "Memory" [ref=e28] [cursor=pointer]:
+          - /url: /memory
+          - img [ref=e29]
+          - generic [ref=e37]: Memory
+        - link "Advanced" [ref=e38] [cursor=pointer]:
+          - /url: /advanced
+          - img [ref=e39]
+          - generic [ref=e42]: Advanced
+        - paragraph [ref=e44]: Agents
+        - link "Agents" [ref=e45] [cursor=pointer]:
+          - /url: /agents
+          - img [ref=e46]
+          - generic [ref=e49]: Agents
+        - link "Skills" [ref=e50] [cursor=pointer]:
+          - /url: /skills
+          - img [ref=e51]
+          - generic [ref=e53]: Skills
+        - link "Teams" [ref=e54] [cursor=pointer]:
+          - /url: /teams
+          - img [ref=e55]
+          - generic [ref=e60]: Teams
+        - link "Marketplace" [ref=e61] [cursor=pointer]:
+          - /url: /marketplace
+          - img [ref=e62]
+          - generic [ref=e66]: Marketplace
+      - paragraph [ref=e68]: © 2026 CIAO
+    - main [ref=e69]:
+      - generic [ref=e71]:
+        - generic [ref=e72]:
+          - generic [ref=e73]: C
+          - heading "Try CIAO" [level=1] [ref=e74]
+          - paragraph [ref=e75]: Submit an intent below to see how CIAO interprets and processes it. No login required.
+        - generic [ref=e76]:
+          - textbox "e.g. \"Fix the OAuth callback to handle expired tokens\"" [ref=e77]
+          - generic [ref=e78]:
+            - button "Ask" [ref=e79] [cursor=pointer]
+            - button "Draft" [ref=e80] [cursor=pointer]
+            - button "Act" [ref=e81] [cursor=pointer]
+            - button "Ship" [ref=e82] [cursor=pointer]
+            - button "Watch" [ref=e83] [cursor=pointer]
+            - button "Review" [ref=e84] [cursor=pointer]
+          - button "Submit" [disabled] [ref=e86]
+        - generic [ref=e87]:
+          - heading "Try these examples" [level=3] [ref=e88]
+          - generic [ref=e89]:
+            - button "Refactor the user authentication module to use JWT instead of session cookies" [ref=e90] [cursor=pointer]
+            - button "Add rate limiting to the public API endpoints" [ref=e91] [cursor=pointer]
+            - button "Write unit tests for the payment processing pipeline" [ref=e92] [cursor=pointer]
+            - button "Optimize the database queries in the dashboard report generator" [ref=e93] [cursor=pointer]
+        - paragraph [ref=e94]:
+          - text: Trial mode uses mock AI responses.
+          - link "Create an account" [ref=e95] [cursor=pointer]:
+            - /url: /register
+          - text: for the full experience with real AI providers.
+  - alert [ref=e96]

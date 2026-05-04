@@ -1,0 +1,26 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - link "C" [ref=e5] [cursor=pointer]:
+        - /url: /home
+      - heading "Sign in to CIAO" [level=1] [ref=e6]
+      - paragraph [ref=e7]: Enter your credentials to continue
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: Email
+        - textbox "Email" [ref=e11]:
+          - /placeholder: you@example.com
+          - text: wrong@email.com
+      - generic [ref=e12]:
+        - generic [ref=e13]: Password
+        - textbox "Password" [ref=e14]:
+          - /placeholder: ••••••••
+          - text: wrongpass
+      - button "Sign in" [ref=e15] [cursor=pointer]
+    - paragraph [ref=e16]:
+      - text: Don't have an account?
+      - link "Create one" [ref=e17] [cursor=pointer]:
+        - /url: /register
+    - link "Try CIAO without signing in" [ref=e19] [cursor=pointer]:
+      - /url: /trial
+  - alert [ref=e20]
