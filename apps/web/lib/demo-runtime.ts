@@ -125,29 +125,16 @@ export async function getDecisionCards() {
 
 export async function resolveDecision(decisionId: string, optionId: string) {
   const workspaceId = await getTestWorkspaceId();
-  const outcome = await resolvePersistentDecision(decisionId, optionId, workspaceId);
-  if (outcome) {
+  const result = await resolvePersistentDecision(decisionId, optionId, workspaceId);
+  if (result) {
     pushDemoEvents(
       {
-        type: "outcome_ready",
-        data: {
-          id: outcome.id,
-          intentId: outcome.intentId,
-          title: outcome.title,
-          summary: outcome.summary,
-          confidence: outcome.confidence,
-          costLabel: outcome.costSummary.label,
-          state: outcome.state,
-          createdAt: outcome.createdAt,
-        },
-      },
-      {
         type: "calm_state_changed",
-        data: { calmState: "working", summary: "CIAO has a result ready for review." },
+        data: { calmState: "working", summary: "CIAO resumed execution after decision." },
       },
     );
   }
-  return outcome;
+  return result;
 }
 
 export async function getOutcomeCards(): Promise<OutcomeCard[]> {

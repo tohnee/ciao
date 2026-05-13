@@ -1,4 +1,5 @@
 import type { ProviderAdapter } from "@ciao/providers";
+import { extractJSON } from "../json-utils";
 
 export type Interpretation = {
   title: string;
@@ -23,7 +24,8 @@ export async function interpretIntent(
   });
 
   try {
-    const parsed = JSON.parse(result.text) as Interpretation;
+    const json = extractJSON(result.text);
+    const parsed = JSON.parse(json) as Interpretation;
     return {
       title: parsed.title ?? input.trim().slice(0, 60),
       interpretedGoal: parsed.interpretedGoal ?? input.trim(),

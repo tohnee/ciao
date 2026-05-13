@@ -7,9 +7,11 @@ export type TestResult = {
   failed: string[];
 };
 
-export function runTests(testCommand?: string): TestResult {
+const DEFAULT_TEST_CMD = "npm test 2>&1 | tail -25";
+
+export function runTests(): TestResult {
   try {
-    const output = execSync(testCommand ?? "npm test 2>&1 | tail -25", {
+    const output = execSync(DEFAULT_TEST_CMD, {
       encoding: "utf-8",
       timeout: 120_000,
       stdio: ["ignore", "pipe", "pipe"],

@@ -23,13 +23,22 @@ function handleShipMode(context: GovernorContext): NextStep {
 
 function handleMode(mode: IntentMode, context: GovernorContext): NextStep {
   if (mode === "ask") {
-    return { type: "run_capability", capability: "summarize_result" };
+    if (!hasCompletedLoop(context, "summarize")) {
+      return { type: "run_capability", capability: "summarize_result" };
+    }
+    return { type: "build_outcome" };
   }
   if (mode === "review") {
-    return { type: "run_capability", capability: "review_diff" };
+    if (!hasCompletedLoop(context, "review")) {
+      return { type: "run_capability", capability: "review_diff" };
+    }
+    return { type: "build_outcome" };
   }
   if (mode === "watch") {
-    return { type: "run_capability", capability: "monitor_signal" };
+    if (!hasCompletedLoop(context, "monitor")) {
+      return { type: "run_capability", capability: "monitor_signal" };
+    }
+    return { type: "build_outcome" };
   }
   return handleShipMode(context);
 }

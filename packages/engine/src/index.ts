@@ -12,3 +12,4 @@ export * from "./agent/agent-registry";
 export * from "./agent/agent-dispatcher";
 export * from "./agent/agent-memory-engine";
 export * from "./agent/skill-injector";
+export * from "./multi-agent";

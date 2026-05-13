@@ -8,7 +8,7 @@ import {
 } from "../apps/web/lib/demo-runtime";
 
 describe("sqlite decision resolution", () => {
-  it("marks the decision resolved and persists an outcome", async () => {
+  it("marks the decision resolved and resumes the intent", async () => {
     await resetDemoRuntime();
 
     await createDemoIntent({
@@ -22,6 +22,7 @@ describe("sqlite decision resolution", () => {
     await resolveDecision(decision.id, "minimal");
 
     expect(await getOpenDecisions()).toHaveLength(0);
-    expect(await getOutcomeCards()).toHaveLength(1);
+    // No fake outcome — orchestrator builds it asynchronously
+    expect(await getOutcomeCards()).toHaveLength(0);
   });
 });

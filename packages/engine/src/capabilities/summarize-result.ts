@@ -1,4 +1,5 @@
 import type { ProviderAdapter } from "@ciao/providers";
+import { extractJSON } from "../json-utils";
 
 export type ResultSummary = {
   summary: string;
@@ -31,7 +32,7 @@ export async function summarizeResult(
   });
 
   try {
-    return JSON.parse(result.text) as ResultSummary;
+    return JSON.parse(extractJSON(result.text)) as ResultSummary;
   } catch {
     return {
       summary: "CIAO processed the intent.",

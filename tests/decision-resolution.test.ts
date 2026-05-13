@@ -8,7 +8,7 @@ import {
 } from "../apps/web/lib/demo-runtime";
 
 describe("decision resolution", () => {
-  it("moves an intent from needs_decision to ready and creates an outcome", async () => {
+  it("resolves a decision and resumes the intent", async () => {
     await resetDemoRuntime();
 
     await createDemoIntent({
@@ -22,6 +22,7 @@ describe("decision resolution", () => {
     await resolveDecision(decision.id, "minimal");
 
     expect(await getOpenDecisions()).toHaveLength(0);
-    expect(await getOutcomeCards()).toHaveLength(1);
+    // Decision resolution no longer creates fake outcome — orchestrator resumes async
+    expect(await getOutcomeCards()).toHaveLength(0);
   });
 });

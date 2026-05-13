@@ -1,7 +1,8 @@
 import { describe, expect, it, vi } from "vitest";
 import { GET as listMemories } from "../apps/web/app/api/memories/route";
 import { POST as saveMemory } from "../apps/web/app/api/outcomes/[id]/save-memory/route";
-import { createDemoIntent, getOpenDecisions, getOutcomeCards, resolveDecision, resetDemoRuntime } from "../apps/web/lib/demo-runtime";
+import { resetDemoRuntime } from "../apps/web/lib/demo-runtime";
+import { prisma } from "../apps/web/lib/prisma";
 
 vi.mock("../apps/web/lib/workspace", () => ({
   getRequiredWorkspaceId: async () => (globalThis as any).__ciaoTestWorkspaceId,
@@ -10,18 +11,32 @@ vi.mock("../apps/web/lib/workspace", () => ({
 describe("memory api", () => {
   it("persists a memory from an outcome", async () => {
     await resetDemoRuntime();
+    const workspaceId = (globalThis as any).__ciaoTestWorkspaceId as string;
 
-    await createDemoIntent({
-      rawInput: "Fix OAuth callback test",
-      mode: "ship",
-      costMode: "frugal",
-      forceDecision: true,
+    // Create a real intent + outcome so FK constraints are satisfied
+    const intent = await prisma.intent.create({
+      data: {
+        workspaceId,
+        rawInput: "Test memory flow",
+        title: "Test memory",
+        interpretedGoal: "Test memory flow",
+        mode: "ship",
+        state: "ready",
+      },
     });
 
-    const decision = (await getOpenDecisions())[0];
-    await resolveDecision(decision.id, "minimal");
-    const outcomes = await getOutcomeCards();
-    const outcome = outcomes[0];
+    const outcome = await prisma.outcome.create({
+      data: {
+        intentId: intent.id,
+        title: "Test memory",
+        summary: "A test outcome",
+        changed: JSON.stringify(["file.ts"]),
+        verified: JSON.stringify([]),
+        risks: JSON.stringify([]),
+        confidence: "high",
+        state: "ready",
+      },
+    });
 
     const saveResponse = await saveMemory(
       new Request(`http://localhost/api/outcomes/${outcome.id}/save-memory`, {

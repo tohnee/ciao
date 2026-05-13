@@ -19,6 +19,7 @@ describe("demo runtime events", () => {
     await resolveDecision(decision.id, "minimal");
 
     const resolvedEvents = drainDemoEvents();
-    expect(resolvedEvents.some((event) => event.type === "outcome_ready")).toBe(true);
+    // Outcome is NOT created on resolve — orchestrator resumes asynchronously
+    expect(resolvedEvents.some((event) => event.type === "calm_state_changed")).toBe(true);
   });
 });

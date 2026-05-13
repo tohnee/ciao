@@ -1,4 +1,5 @@
 import { ok } from "@/lib/api-helpers";
+import { getRequiredWorkspaceId } from "@/lib/workspace";
 import { getAgentMemories, createAgentMemory, deleteAgentMemory } from "@/lib/runtime-repository";
 
 export async function GET(
@@ -28,7 +29,8 @@ export async function DELETE(
   request: Request,
   { params }: { params: { id: string } },
 ) {
+  const workspaceId = await getRequiredWorkspaceId();
   const body = (await request.json()) as { memoryId: string };
-  await deleteAgentMemory(body.memoryId);
+  await deleteAgentMemory(body.memoryId, workspaceId);
   return ok({ success: true });
 }

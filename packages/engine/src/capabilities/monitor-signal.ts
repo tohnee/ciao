@@ -1,4 +1,5 @@
 import type { ProviderAdapter } from "@ciao/providers";
+import { extractJSON } from "../json-utils";
 
 export type MonitorResult = {
   status: "calm" | "watching" | "alert";
@@ -26,7 +27,7 @@ export async function monitorSignal(
   });
 
   try {
-    return JSON.parse(result.text) as MonitorResult;
+    return JSON.parse(extractJSON(result.text)) as MonitorResult;
   } catch {
     const hasHigh = recent.some((s) => s.level === "high");
     return {

@@ -394,6 +394,14 @@ export async function createStartedIntent(input: CreateIntentInput, workspaceId:
   return formatIntentRecord(record);
 }
 
+export async function getIntent(intentId: string) {
+  const record = await prisma.intent.findUnique({
+    where: { id: intentId },
+  });
+  if (!record) return null;
+  return formatIntentRecord(record);
+}
+
 export async function listIntents(workspaceId: string) {
   const intents = await prisma.intent.findMany({
     where: { workspaceId },
@@ -486,6 +494,10 @@ export async function resolveDecision(decisionId: string, optionId: string, work
       return null;
     }
 
+    if (decision.intent.workspaceId !== workspaceId) {
+      return null;
+    }
+
     await tx.decision.update({
       where: { id: decisionId },
       data: {
@@ -495,50 +507,24 @@ export async function resolveDecision(decisionId: string, optionId: string, work
       },
     });
 
+    // Resume intent — set back to working so the orchestrator continues
     await tx.intent.update({
       where: { id: decision.intentId },
-      data: {
-        state: "ready",
-      },
-    });
-
-    const outcome = await tx.outcome.create({
-      data: {
-        intentId: decision.intentId,
-        title: `${decision.intent.title} ready`,
-        summary: `CIAO applied the ${optionId} path and prepared the result for acceptance.`,
-        changed: JSON.stringify(["Focused implementation path selected"]),
-        verified: JSON.stringify(["Decision resolved and intent advanced"]),
-        risks: JSON.stringify(["Real code changes are still mocked in this demo loop"]),
-        confidence: "medium",
-        costSummary: JSON.stringify({
-          mode: "frugal",
-          label: "Frugal · below normal",
-        }),
-        receipt: JSON.stringify({
-          decisionId,
-          optionId,
-        }),
-        state: "ready",
-      },
+      data: { state: "working" },
     });
 
     await tx.signal.create({
       data: {
         workspaceId: decision.intent.workspaceId,
         intentId: decision.intentId,
-        kind: "result",
+        kind: "progress",
         level: "medium",
-        message: "CIAO has prepared a result ready for review.",
+        message: `CIAO resumed execution with the "${optionId}" path.`,
         compact: true,
       },
     });
 
-    const formatted = formatOutcome(outcome);
-    return {
-      outcome: formatted,
-      intentId: decision.intentId,
-    };
+    return { intentId: decision.intentId, workspaceId: decision.intent.workspaceId };
   });
 
   if (!result) {
@@ -548,34 +534,26 @@ export async function resolveDecision(decisionId: string, optionId: string, work
   await appendEvent({
     workspaceId,
     stream: "home",
-    type: "outcome_ready",
-    intentId: result.intentId,
-    payload: {
-      id: result.outcome.id,
-      intentId: result.outcome.intentId,
-      title: result.outcome.title,
-      summary: result.outcome.summary,
-      confidence: result.outcome.confidence,
-      costLabel: result.outcome.costSummary.label,
-      state: result.outcome.state,
-      createdAt: result.outcome.createdAt,
-    },
-  });
-  await appendEvent({
-    workspaceId,
-    stream: "home",
     type: "calm_state_changed",
     intentId: result.intentId,
     payload: {
       calmState: "working",
-      summary: "CIAO has a result ready for review.",
+      summary: "CIAO resumed execution after decision.",
     },
   });
 
-  return result.outcome;
+  return result;
 }
 
-export async function acceptOutcome(outcomeId: string) {
+export async function acceptOutcome(outcomeId: string, workspaceId: string) {
+  const existing = await prisma.outcome.findUnique({
+    where: { id: outcomeId },
+    include: { intent: { select: { workspaceId: true } } },
+  });
+  if (!existing || existing.intent.workspaceId !== workspaceId) {
+    return null;
+  }
+
   const outcome = await prisma.outcome.update({
     where: { id: outcomeId },
     data: { state: "accepted" },
@@ -584,7 +562,15 @@ export async function acceptOutcome(outcomeId: string) {
   return formatOutcome(outcome);
 }
 
-export async function revertOutcome(outcomeId: string) {
+export async function revertOutcome(outcomeId: string, workspaceId: string) {
+  const existing = await prisma.outcome.findUnique({
+    where: { id: outcomeId },
+    include: { intent: { select: { workspaceId: true } } },
+  });
+  if (!existing || existing.intent.workspaceId !== workspaceId) {
+    return null;
+  }
+
   const outcome = await prisma.outcome.update({
     where: { id: outcomeId },
     data: { state: "reverted" },
@@ -604,9 +590,10 @@ export async function getOutcome(outcomeId: string) {
 export async function updateMemory(
   memoryId: string,
   data: { title?: string; status?: string },
+  workspaceId: string,
 ) {
   const memory = await prisma.memory.update({
-    where: { id: memoryId },
+    where: { id: memoryId, workspaceId },
     data: {
       ...(data.title !== undefined ? { title: data.title } : {}),
       ...(data.status !== undefined ? { status: data.status } : {}),
@@ -616,15 +603,24 @@ export async function updateMemory(
   return formatMemory(memory);
 }
 
-export async function deleteMemory(memoryId: string) {
-  await prisma.memory.delete({ where: { id: memoryId } });
+export async function deleteMemory(memoryId: string, workspaceId: string) {
+  await prisma.memory.delete({ where: { id: memoryId, workspaceId } });
   return { success: true };
 }
 
 export async function updateIntentState(
   intentId: string,
   state: Intent["state"],
+  workspaceId: string,
 ) {
+  const existing = await prisma.intent.findUnique({
+    where: { id: intentId },
+    select: { workspaceId: true },
+  });
+  if (!existing || existing.workspaceId !== workspaceId) {
+    return null;
+  }
+
   const intent = await prisma.intent.update({
     where: { id: intentId },
     data: { state },
@@ -633,7 +629,7 @@ export async function updateIntentState(
   return formatIntentRecord(intent);
 }
 
-export async function saveMemoryFromOutcome(outcomeId: string, input: SaveMemoryInput = {}) {
+export async function saveMemoryFromOutcome(outcomeId: string, input: SaveMemoryInput = {}, workspaceId?: string) {
   const outcome = await prisma.outcome.findUnique({
     where: { id: outcomeId },
     include: {
@@ -647,6 +643,10 @@ export async function saveMemoryFromOutcome(outcomeId: string, input: SaveMemory
   });
 
   if (!outcome) {
+    return null;
+  }
+
+  if (workspaceId && outcome.intent.workspaceId !== workspaceId) {
     return null;
   }
 
@@ -749,6 +749,7 @@ export async function createAgent(data: {
 
 export async function updateAgent(
   agentId: string,
+  workspaceId: string,
   data: {
     name?: string;
     description?: string;
@@ -762,11 +763,11 @@ export async function updateAgent(
     avatarUrl?: string;
   },
 ) {
-  return prisma.agent.update({ where: { id: agentId }, data: data as any });
+  return prisma.agent.update({ where: { id: agentId, workspaceId }, data: data as any });
 }
 
-export async function deleteAgent(agentId: string) {
-  await prisma.agent.delete({ where: { id: agentId } });
+export async function deleteAgent(agentId: string, workspaceId: string) {
+  await prisma.agent.delete({ where: { id: agentId, workspaceId } });
   return { success: true };
 }
 
@@ -807,6 +808,7 @@ export async function createSkill(data: {
 
 export async function updateSkill(
   skillId: string,
+  workspaceId: string,
   data: {
     name?: string;
     description?: string;
@@ -815,11 +817,11 @@ export async function updateSkill(
     version?: string;
   },
 ) {
-  return prisma.skill.update({ where: { id: skillId }, data });
+  return prisma.skill.update({ where: { id: skillId, workspaceId }, data });
 }
 
-export async function deleteSkill(skillId: string) {
-  await prisma.skill.delete({ where: { id: skillId } });
+export async function deleteSkill(skillId: string, workspaceId: string) {
+  await prisma.skill.delete({ where: { id: skillId, workspaceId } });
   return { success: true };
 }
 
@@ -911,13 +913,14 @@ export async function createTeam(data: {
 
 export async function updateTeam(
   teamId: string,
+  workspaceId: string,
   data: { name?: string; description?: string },
 ) {
-  return prisma.team.update({ where: { id: teamId }, data });
+  return prisma.team.update({ where: { id: teamId, workspaceId }, data });
 }
 
-export async function deleteTeam(teamId: string) {
-  await prisma.team.delete({ where: { id: teamId } });
+export async function deleteTeam(teamId: string, workspaceId: string) {
+  await prisma.team.delete({ where: { id: teamId, workspaceId } });
   return { success: true };
 }
 
@@ -1010,7 +1013,14 @@ export async function createAgentMemory(data: {
   });
 }
 
-export async function deleteAgentMemory(memoryId: string) {
+export async function deleteAgentMemory(memoryId: string, workspaceId: string) {
+  const memory = await prisma.agentMemory.findUnique({
+    where: { id: memoryId },
+    include: { agent: { select: { workspaceId: true } } },
+  });
+  if (!memory || memory.agent.workspaceId !== workspaceId) {
+    return null;
+  }
   await prisma.agentMemory.delete({ where: { id: memoryId } });
   return { success: true };
 }

@@ -1,4 +1,5 @@
 import type { ProviderAdapter } from "@ciao/providers";
+import { extractJSON } from "../json-utils";
 
 export type EditResult = {
   summary: string;
@@ -26,7 +27,7 @@ export async function editCode(
   });
 
   try {
-    return JSON.parse(result.text) as EditResult;
+    return JSON.parse(extractJSON(result.text)) as EditResult;
   } catch {
     return {
       summary: `Edit work for: ${goal}`,

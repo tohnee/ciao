@@ -1,4 +1,5 @@
 import type { ProviderAdapter } from "@ciao/providers";
+import { extractJSON } from "../json-utils";
 
 export type FileSelection = {
   files: string[];
@@ -33,7 +34,7 @@ export async function selectFiles(
   });
 
   try {
-    const parsed = JSON.parse(result.text) as FileSelection;
+    const parsed = JSON.parse(extractJSON(result.text)) as FileSelection;
     return {
       files: Array.isArray(parsed.files) ? parsed.files.slice(0, 5) : candidates.slice(0, 3),
       reasoning: parsed.reasoning ?? "Selected by relevance",

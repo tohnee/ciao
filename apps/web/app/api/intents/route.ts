@@ -2,7 +2,8 @@ import { ok } from "@/lib/api-helpers";
 import { getBestProvider } from "@/lib/provider-factory";
 import { getRequiredWorkspaceId } from "@/lib/workspace";
 import { orchestrateIntent } from "@/lib/loop-orchestrator";
-import { createStartedIntent, listIntents, previewIntent } from "@/lib/runtime-repository";
+import { createStartedIntent, listIntents, previewIntent, updateIntentState } from "@/lib/runtime-repository";
+import { prisma } from "@/lib/prisma";
 
 export async function GET() {
   const workspaceId = await getRequiredWorkspaceId();
@@ -38,8 +39,23 @@ export async function POST(request: Request) {
     // Fire orchestrator in background for non-decision path
     if (!body.forceDecision) {
       const provider = getBestProvider();
-      orchestrateIntent(intent, provider, workspaceId, body.agentId).catch((err) => {
+      orchestrateIntent(intent, provider, workspaceId, body.agentId).catch(async (err) => {
         console.error("Orchestrator error:", err);
+        try {
+          await updateIntentState(intent.id, "paused", workspaceId);
+          await prisma.signal.create({
+            data: {
+              workspaceId,
+              intentId: intent.id,
+              kind: "blocker",
+              level: "high",
+              message: `Execution failed: ${err instanceof Error ? err.message : "Unknown error"}`,
+              compact: false,
+            },
+          });
+        } catch (signalErr) {
+          console.error("Failed to record orchestrator failure:", signalErr);
+        }
       });
     }
 

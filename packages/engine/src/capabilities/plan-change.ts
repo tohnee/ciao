@@ -1,4 +1,5 @@
 import type { ProviderAdapter } from "@ciao/providers";
+import { extractJSON } from "../json-utils";
 
 export type ChangePlan = {
   title: string;
@@ -18,7 +19,7 @@ export async function planChange(
   });
 
   try {
-    return JSON.parse(result.text) as ChangePlan;
+    return JSON.parse(extractJSON(result.text)) as ChangePlan;
   } catch {
     return { title: "Focused plan", goal, steps: ["Execute the change"] };
   }

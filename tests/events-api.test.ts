@@ -41,7 +41,12 @@ describe("events api", () => {
       new Request(`http://localhost/api/events?stream=home&lastEventId=${first.id}`),
     );
 
-    const body = await response.text();
+    // Stream is now long-lived — read first chunk then cancel
+    const reader = response.body!.getReader();
+    const decoder = new TextDecoder();
+    const { value } = await reader.read();
+    reader.cancel();
+    const body = decoder.decode(value);
 
     expect(response.headers.get("Content-Type")).toContain("text/event-stream");
     expect(body).toContain("Running");

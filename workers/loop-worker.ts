@@ -35,7 +35,7 @@ export async function processNextIntent() {
     updatedAt: intent.updatedAt.toISOString(),
   };
 
-  await orchestrateIntent(intentObj, provider);
+  await orchestrateIntent(intentObj, provider, intentObj.workspaceId);
 
   return { processed: true, intentId: intent.id };
 }
@@ -65,7 +65,7 @@ export async function processAllPending() {
       updatedAt: intent.updatedAt.toISOString(),
     };
 
-    await orchestrateIntent(intentObj, provider);
+    await orchestrateIntent(intentObj, provider, intentObj.workspaceId);
     results.push({ intentId: intent.id });
   }
 
